@@ -25,7 +25,8 @@ Jede App bekommt unter `datenschutz/` einen eigenen Ordner mit einer `index.html
 - Quelle im Spielprojekt: `Docs/Koop/Legal/datenschutz.html` (JND1992/magicbrawlodyssey) – Änderungen dort und hier
   gleich halten.
 - Im Spiel: `GameLinks.PrivacyUrl`. Bis 10.10.2026 lag die Erklärung unter
-  https://jnd1992.github.io/magicbrawlodyssey-legal/datenschutz.html (leitet hierher weiter, für ältere App-Versionen).
+  https://jnd1992.github.io/magicbrawlodyssey-legal/datenschutz.html (App-Versionen bis 1.0.7 öffnen sie; eine Weiterleitung
+  hierher ist vorbereitet und geht nach Jans OK online, nachdem die Play Console auf die neue Adresse umgestellt ist).
 
 ## Eigene Domain (optional)
 
