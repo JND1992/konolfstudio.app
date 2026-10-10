@@ -9,6 +9,8 @@ https://jnd1992.github.io/konolfstudio.app/
 index.html                         Startseite (Links)
 datenschutz/
   index.html                       Übersicht aller Datenschutzerklärungen
+  fuzzy-meadow/
+    index.html                     Datenschutzerklärung „Fuzzy Meadow“
   magic-brawl-odyssey/
     index.html                     Datenschutzerklärung „Magic Brawl Odyssey“
 .nojekyll                          GitHub Pages liefert die Dateien unverändert aus
@@ -27,6 +29,13 @@ Jede App bekommt unter `datenschutz/` einen eigenen Ordner mit einer `index.html
 - Im Spiel: `GameLinks.PrivacyUrl`. Bis 10.10.2026 lag die Erklärung unter
   https://jnd1992.github.io/magicbrawlodyssey-legal/datenschutz.html (App-Versionen bis 1.0.7 öffnen sie; eine Weiterleitung
   hierher ist vorbereitet und geht nach Jans OK online, nachdem die Play Console auf die neue Adresse umgestellt ist).
+
+## Fuzzy Meadow
+
+- Adresse: https://jnd1992.github.io/konolfstudio.app/datenschutz/fuzzy-meadow/ (Deutsch `#de`, Englisch `#en`)
+- Quelle im Spielprojekt: `Docs/Datenschutz/index.html` (Fuzzy Meadow) – Änderungen dort und hier gleich halten.
+- Die App sammelt keine Daten und hat keine Internet-Berechtigung. Wird der Kauf der Vollversion (Google Play Billing)
+  scharf geschaltet, braucht die App Internet – dann die Erklärung prüfen (Abschnitt 5 nennt den Kauf schon).
 
 ## Eigene Domain (optional)
 
