@@ -13,6 +13,9 @@ datenschutz/
     index.html                     Datenschutzerklärung „Fuzzy Meadow“
   magic-brawl-odyssey/
     index.html                     Datenschutzerklärung „Magic Brawl Odyssey“
+lizenzen/
+  magic-brawl-odyssey/
+    index.html                     Open-Source-Lizenzen „Magic Brawl Odyssey“ (erzeugt, nicht von Hand ändern)
 .nojekyll                          GitHub Pages liefert die Dateien unverändert aus
 ```
 
@@ -27,8 +30,24 @@ Jede App bekommt unter `datenschutz/` einen eigenen Ordner mit einer `index.html
 - Quelle im Spielprojekt: `Docs/Koop/Legal/datenschutz.html` (JND1992/magicbrawlodyssey) – Änderungen dort und hier
   gleich halten.
 - Im Spiel: `GameLinks.PrivacyUrl`. Bis 10.10.2026 lag die Erklärung unter
-  https://jnd1992.github.io/magicbrawlodyssey-legal/datenschutz.html (App-Versionen bis 1.0.7 öffnen sie; eine Weiterleitung
-  hierher ist vorbereitet und geht nach Jans OK online, nachdem die Play Console auf die neue Adresse umgestellt ist).
+  https://jnd1992.github.io/magicbrawlodyssey-legal/datenschutz.html (App-Versionen bis 1.0.7 öffnen sie; sie leitet seit
+  11.10.2026 hierher weiter).
+
+### Open-Source-Lizenzen (Magic Brawl Odyssey)
+
+- Adresse: https://jnd1992.github.io/konolfstudio.app/lizenzen/magic-brawl-odyssey/ (im Spiel: `GameLinks.LicensesUrl`,
+  Knopf „Website öffnen“ im Fenster EINSTELLUNGEN › Online & Info › Open-Source-Lizenzen). Verlinkt von `index.html`.
+- Die Seite wird **erzeugt** – nicht von Hand ändern. Das Skript `Tools/Legal/build_notices.py` im Spielprojekt
+  (JND1992/magicbrawlodyssey) schreibt sie zusammen mit demselben Text für die App
+  (`Assets/Resources/Legal/OpenSourceLicenses.txt`), aus dem gebauten AAB, dem Gradle-Cache, `Library/PackageCache` und
+  dem NDK. Neu erzeugen (im Spielprojekt, dieses Repo liegt daneben):
+  ```
+  python Tools/Legal/build_notices.py            # schreibt beide Dateien
+  python Tools/Legal/build_notices.py --check    # schreibt nichts; Exit-Code 1, wenn eine Datei veraltet ist
+                                                 # (CRLF aus dem git-Checkout zählt nicht als Änderung)
+  ```
+  Danach beide Repos committen. Nötig nach jedem SDK- oder Paket-Update (Release-Checkliste des Spiels, Punkt 3.8).
+- Keine Skripte, keine Cookies; große Lizenztexte sind eingeklappt (`<details>`), alles andere ist sichtbar.
 
 ## Fuzzy Meadow
 
