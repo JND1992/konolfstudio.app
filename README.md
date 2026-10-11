@@ -13,6 +13,8 @@ datenschutz/
     index.html                     Datenschutzerklärung „Fuzzy Meadow“
   magic-brawl-odyssey/
     index.html                     Datenschutzerklärung „Magic Brawl Odyssey“
+  little-farmstand/
+    index.html                     Datenschutzerklärung „Little Farmstand“
 lizenzen/
   magic-brawl-odyssey/
     index.html                     Open-Source-Lizenzen „Magic Brawl Odyssey“ (erzeugt, nicht von Hand ändern)
@@ -55,6 +57,13 @@ Jede App bekommt unter `datenschutz/` einen eigenen Ordner mit einer `index.html
 - Quelle im Spielprojekt: `Docs/Datenschutz/index.html` (Fuzzy Meadow) – Änderungen dort und hier gleich halten.
 - Die App sammelt keine Daten und hat keine Internet-Berechtigung. Wird der Kauf der Vollversion (Google Play Billing)
   scharf geschaltet, braucht die App Internet – dann die Erklärung prüfen (Abschnitt 5 nennt den Kauf schon).
+
+## Little Farmstand
+
+- Adresse: https://konolfstudio.app/datenschutz/little-farmstand/ (Deutsch `#de`, Englisch `#en`)
+- Quelle im Spielprojekt: `Docs/Store/datenschutz.html` (JND1992/LittleFarmstand) – Änderungen dort und hier gleich halten.
+- Die App sammelt keine Daten, hat keine Werbung, keine Käufe und keine Internet-Berechtigung
+  (wird beim Build per `Assets/Game/Editor/ManifestFix.cs` entfernt).
 
 ## Eigene Domain (optional)
 
