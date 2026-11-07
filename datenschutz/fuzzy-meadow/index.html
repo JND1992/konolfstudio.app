@@ -1,10 +1,14 @@
 <!doctype html>
 <!--
-  Datenschutzerklärung Fuzzy Meadow, Fassung 1 (Stand 10.10.2026).
+  Datenschutzerklärung Fuzzy Meadow, Fassung 2 (Stand 07.11.2026): Abschnitt 6 zum Feedback-Versand im offenen Test
+  (Beta-Bundle FM_OPEN_BETA, Cloudflare-Worker feedback.konolfstudio.app → Postfach bei Outlook.com) und Kasten
+  „Daten löschen lassen“ mit Anker #loeschen / #delete (Link für die Play Console, Datensicherheit).
+  Fassung 1 (Stand 10./11.10.2026): App ganz ohne Internet.
   Von Claude nach dem Code-Stand entworfen (keine Rechtsberatung), Angaben zum Verantwortlichen von Jan.
-  Veröffentlicht unter https://jnd1992.github.io/konolfstudio.app/datenschutz/fuzzy-meadow/
+  Veröffentlicht unter https://konolfstudio.app/datenschutz/fuzzy-meadow/
   (Repo JND1992/konolfstudio.app, Datei datenschutz/fuzzy-meadow/index.html).
   Quelle im Spielprojekt: Docs/Datenschutz/index.html – Änderungen dort UND im veröffentlichten Repo nachziehen.
+  Prüfliste und Play-Console-Angaben: Docs/Feedback/Datenschutz_Ergaenzung.md
 -->
 <html lang="de">
 <head>
@@ -21,6 +25,7 @@
 }
 :root[data-theme="dark"] { --bg: #211b18; --paper: #2b2420; --ink: #f1e7dc; --soft: #bfae9f; --line: #43382f; --accent: #ff9a62; --chip: #3a302a; }
 * { box-sizing: border-box; }
+html { scroll-padding-top: 16px; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 "Segoe UI", system-ui, -apple-system, sans-serif; }
 main { max-width: 820px; margin: 0 auto; padding: 28px 16px 64px; }
 header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
@@ -32,8 +37,9 @@ h2 { font-size: 24px; margin: 0 0 6px; }
 h3 { font-size: 18px; margin: 22px 0 6px; }
 .lead { color: var(--soft); margin-top: 0; }
 .box { background: var(--chip); border-radius: 12px; padding: 12px 16px; margin: 12px 0; }
+.box ol { margin: 8px 0; padding-left: 22px; }
+.box:target { outline: 2px solid var(--accent); outline-offset: 2px; }
 a { color: var(--accent); }
-.todo { background: #ffe9a8; color: #5a4300; border-radius: 6px; padding: 0 6px; }
 footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26px; }
 @media (max-width: 600px) { section { padding: 18px 16px; } h1 { font-size: 24px; } }
 </style>
@@ -48,11 +54,13 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
 <!-- ======================================================= DEUTSCH -->
 <section id="de" lang="de">
   <h2>Datenschutzerklärung</h2>
-  <p class="lead">für die App „Fuzzy Meadow“ (Android) · Stand: 11. Oktober 2026</p>
+  <p class="lead">für die App „Fuzzy Meadow“ (Android) · Stand: 7. November 2026</p>
 
-  <div class="box"><b>Kurz gesagt:</b> Fuzzy Meadow erhebt keine personenbezogenen Daten. Die App hat keine Benutzerkonten,
-  keine Werbung, kein Tracking, keine Analyse-Werkzeuge und verbindet sich nicht mit dem Internet. Dein Spielstand
-  bleibt auf deinem Gerät.</div>
+  <div class="box"><b>Kurz gesagt:</b> Beim Spielen erhebt Fuzzy Meadow keine personenbezogenen Daten. Die App hat keine Benutzerkonten,
+  keine Werbung, kein Tracking und keine Analyse-Werkzeuge, und dein Spielstand bleibt auf deinem Gerät. Die reguläre Version
+  verbindet sich nicht mit dem Internet. <b>Einzige Ausnahme ist die Testversion:</b> Dort können Erwachsene freiwillig Feedback
+  abschicken (Abschnitt 6). Nur dieses Absenden braucht Internet. Wie du gesendetes Feedback löschen lassen kannst, steht unter
+  <a href="#loeschen">„Daten löschen lassen“</a>.</div>
 
   <h3>1. Verantwortlicher</h3>
   <p>Jan-Niklas Dohm<br>
@@ -62,7 +70,8 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
   E-Mail: <a href="mailto:support@konolfstudio.app">support@konolfstudio.app</a></p>
 
   <h3>2. Welche Daten verarbeitet die App?</h3>
-  <p>Die App erhebt, speichert oder übermittelt <b>keine personenbezogenen Daten</b> an uns oder an Dritte. Insbesondere gibt es:</p>
+  <p>Beim Spielen erhebt, speichert oder übermittelt die App <b>keine personenbezogenen Daten</b> an uns oder an Dritte. Die einzige
+  Ausnahme ist Feedback, das du in der Testversion freiwillig abschickst (Abschnitt 6). Insbesondere gibt es:</p>
   <ul>
     <li>keine Registrierung und kein Benutzerkonto,</li>
     <li>keine Werbung und keine Werbe-IDs,</li>
@@ -70,19 +79,25 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
     <li>keinen Zugriff auf Standort, Kontakte, Kamera, Mikrofon, Fotos oder andere Dateien,</li>
     <li>keine Chat- oder Teilen-Funktionen.</li>
   </ul>
-  <p>Die App fordert keine Internet-Berechtigung an und sendet daher keine Daten über das Internet.</p>
+  <p>Die reguläre Version der App fordert keine Internet-Berechtigung an und sendet daher keine Daten über das Internet.
+  Die Testversion im offenen Test hat diese Berechtigung, nutzt sie aber nur für das Absenden von Feedback, das du selbst auslöst (Abschnitt 6).
+  Gespielt wird auch dort ohne Internet.</p>
 
   <h3>3. Spielstand und Einstellungen auf deinem Gerät</h3>
   <p>Damit du weiterspielen kannst, speichert die App deinen Spielstand (deine Welten mit Gebäuden, Knäueln und den von dir
-  vergebenen Namen, die Spielzeit) und deine Einstellungen (z.&nbsp;B. Lautstärke, Sprache, Grafik) <b>nur lokal auf deinem Gerät</b>.
-  Wir haben darauf keinen Zugriff. Beim Deinstallieren der App werden diese Daten gelöscht.</p>
+  vergebenen Namen, die Spielzeit) und deine Einstellungen (z.&nbsp;B. Lautstärke, Sprache, Grafik und die Altersgruppe, die beim
+  ersten Start gewählt wurde) <b>nur lokal auf deinem Gerät</b>. Wir haben darauf keinen Zugriff. Einzelne Welten kannst du auf dem
+  Startbildschirm mit „Löschen“ entfernen; beim Deinstallieren der App werden alle diese Daten gelöscht.</p>
   <p>Wenn auf deinem Gerät die automatische Android-Sicherung („Google One / Android-Backup“) eingeschaltet ist, kann Android
   diese App-Daten in deinem Google-Konto sichern und bei einer Neuinstallation wiederherstellen. Diese Sicherung wird von
   Google bzw. Android durchgeführt, nicht von uns, und kann in den Einstellungen deines Geräts abgeschaltet werden.</p>
 
   <h3>4. Kinder</h3>
-  <p>Fuzzy Meadow ist für Kinder geeignet. Da die App keine personenbezogenen Daten erhebt, werden auch keine Daten von Kindern
-  erhoben. Käufe sind nur über einen Elternbereich mit einer Rechenaufgabe erreichbar.</p>
+  <p>Fuzzy Meadow ist für Kinder geeignet. Da die App beim Spielen keine personenbezogenen Daten erhebt, werden dabei auch keine Daten
+  von Kindern erhoben. Käufe sind nur über einen Elternbereich mit einer Rechenaufgabe erreichbar. Das Feedback-Fenster der
+  Testversion (Abschnitt 6) richtet sich an Erwachsene: Es ist ebenfalls nur über diese Eltern-Abfrage erreichbar, außer wenn beim
+  ersten Start auf die Frage „Wie alt bist du?“ die Antwort „18+“ gewählt wurde. Nur dann zeigt die Testversion zusätzlich einen
+  Knopf „Feedback geben“, der das Fenster direkt öffnet.</p>
 
   <h3>5. Kauf der Vollversion (In-App-Kauf)</h3>
   <p>Ein Teil des Spiels kann kostenlos gespielt werden; die Vollversion kann über einen einmaligen In-App-Kauf freigeschaltet
@@ -96,27 +111,75 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
   Es werden dabei keine Daten an uns oder an andere Anbieter (etwa Analyse- oder Werbedienste) gesendet.
   Es gilt die <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>.</p>
 
-  <h3>6. Google Play Store</h3>
+  <h3 id="feedback">6. Feedback im offenen Test (nur Testversion)</h3>
+  <p>Dieser Abschnitt gilt nur für die Testversion, die wir im offenen Test über Google Play verteilen. Die reguläre Version kann kein
+  Feedback senden. In der Testversion bittet die App gelegentlich um Feedback („Post für Eltern“). Ob du Feedback gibst, entscheidest du
+  selbst; die App funktioniert auch ohne. Wie man das Feedback-Fenster erreicht, steht in Abschnitt 4.</p>
+  <p><b>Was gesendet wird.</b> Erst wenn du auf „Absenden“ tippst, schickt die App verschlüsselt (HTTPS) an unsere Adresse
+  feedback.konolfstudio.app:</p>
+  <ul>
+    <li>den Text, den du geschrieben hast,</li>
+    <li>deine E-Mail-Adresse, falls du sie für den Gutschein einträgst (freiwillig; ohne Adresse können wir dir keinen Gutschein schicken),</li>
+    <li>diese Spielwerte, damit wir das Feedback einordnen können: App-Version, Spielsprache, erreichte Dorfstufe, Spielzeit in Minuten,
+    Anzahl geschaffter Ziele, die beim ersten Start gewählte Altersgruppe und der Anlass der Frage.</li>
+  </ul>
+  <p>Namen, Spielstände und Geräte-Kennungen werden nicht übermittelt. Bitte schreibe nichts Persönliches über dein Kind.</p>
+  <p><b>Wie es zu uns kommt.</b> Das Feedback wird nicht in einer Datenbank gespeichert, sondern als E-Mail in unser Postfach bei
+  Outlook.com (Microsoft) zugestellt. Die Zustellung läuft über Cloudflare Workers und Email Routing von Cloudflare, Inc.,
+  101 Townsend Street, San Francisco, CA 94107, USA, die in unserem Auftrag arbeitet. Dabei verarbeitet Cloudflare auch technisch
+  notwendige Daten wie deine IP-Adresse. Wir verwenden die IP-Adresse nur kurzzeitig, um Missbrauch zu begrenzen (höchstens 5 Nachrichten
+  pro Minute), und bewahren sie nicht auf. Cloudflare und Microsoft können Daten auch in den USA verarbeiten; beide sind nach dem
+  EU-US- und dem Swiss-US-Data-Privacy-Framework zertifiziert. Es gelten die
+  <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Datenschutzerklärung von Cloudflare</a> und die
+  <a href="https://www.microsoft.com/de-de/privacy/privacystatement" rel="noopener">Datenschutzerklärung von Microsoft</a>.</p>
+  <p><b>Per E-Mail.</b> Stattdessen kannst du auf „Per E-Mail schreiben“ tippen. Dann öffnet die App eine vorbereitete E-Mail in deinem
+  E-Mail-Programm; die App selbst sendet dabei nichts. Die Spielwerte stehen sichtbar unten im Text, und du kannst sie vor dem Senden löschen.
+  Schickst du die E-Mail ab, verarbeiten wir deine E-Mail-Adresse und den Inhalt deiner Nachricht.</p>
+  <p><b>Zweck und Rechtsgrundlage.</b> Wir nutzen dein Feedback, um das Spiel zu verbessern, und – wenn du eine E-Mail-Adresse angibst – um
+  dir zum offiziellen Start einen Gutschein für die Vollversion zu schicken. Rechtsgrundlage ist deine Einwilligung
+  (Art. 6 Abs. 1 lit. a DSGVO) bzw. die Durchführung der Gutschein-Aktion (Art. 6 Abs. 1 lit. b DSGVO); in der Schweiz gelten die Grundsätze
+  des DSG. Du kannst deine Einwilligung jederzeit per E-Mail an <a href="mailto:support@konolfstudio.app">support@konolfstudio.app</a> widerrufen.</p>
+  <p><b>Speicherdauer.</b> Deine E-Mail-Adresse löschen wir spätestens 3 Monate nach dem Versand der Gutscheine bzw. nach dem Ende der Aktion.
+  Den Inhalt des Feedbacks und die Spielwerte bewahren wir ohne E-Mail-Adresse auf, solange wir sie für die Weiterentwicklung brauchen,
+  längstens 12 Monate nach dem Ende des Tests.</p>
+  <p><b>Kinder.</b> Kinder sollen nicht allein Feedback abschicken und keine personenbezogenen Daten angeben. Erfahren wir, dass ein Kind
+  Daten eingegeben hat, löschen wir sie.</p>
+
+  <div class="box" id="loeschen"><b>Daten löschen lassen – so geht’s:</b>
+  <ol>
+    <li>Schreib eine E-Mail an <a href="mailto:support@konolfstudio.app?subject=L%C3%B6schen%20Fuzzy%20Meadow">support@konolfstudio.app</a>
+    mit dem Betreff „Löschen Fuzzy Meadow“.</li>
+    <li>Nenne die E-Mail-Adresse, die du im Feedback angegeben oder von der du uns geschrieben hast. Hast du keine angegeben, nenne ungefähr
+    das Datum und ein paar Worte aus deinem Feedback, damit wir es finden.</li>
+    <li>Wir löschen innerhalb eines Monats alles, was wir zu deinem Feedback haben (Feedback-Text, E-Mail-Adresse und Spielwerte),
+    und bestätigen dir das per E-Mail. Wir behalten davon nichts.</li>
+  </ol>
+  Ohne Anfrage löschen wir diese Daten nach den Fristen oben, spätestens 12 Monate nach dem Ende des Tests. Spielstand und Einstellungen
+  liegen nur auf deinem Gerät; du löschst sie selbst, indem du eine Welt auf dem Startbildschirm löschst oder die App deinstallierst
+  (Abschnitt 3). Ein Benutzerkonto, das gelöscht werden müsste, gibt es nicht.</div>
+
+  <h3>7. Google Play Store</h3>
   <p>Wenn du die App über Google Play herunterlädst, verarbeitet Google dabei Daten in eigener Verantwortung (z.&nbsp;B. dein
   Google-Konto und Download-Informationen). Darauf haben wir keinen Einfluss. Statistiken, die wir in der Google Play Console sehen,
   sind zusammengefasst und lassen keinen Rückschluss auf einzelne Personen zu.</p>
 
-  <h3>7. Deine Rechte</h3>
+  <h3>8. Deine Rechte</h3>
   <p>Du hast nach dem Schweizer Datenschutzgesetz (DSG) bzw. – wenn du in der EU wohnst – nach der Datenschutz-Grundverordnung
   (DSGVO) das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch
   sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (in der Schweiz beim Eidgenössischen
-  Datenschutz- und Öffentlichkeitsbeauftragten, EDÖB; in der EU bei der Aufsichtsbehörde deines Wohnlandes). Da wir keine personenbezogenen Daten über dich speichern, können wir in der Regel
-  keine Daten herausgeben oder löschen – deine Spielstände kannst du jederzeit selbst löschen, indem du eine Welt im Spiel löschst
-  oder die App deinstallierst. Bei Fragen erreichst du uns unter der oben genannten E-Mail-Adresse.</p>
+  Datenschutz- und Öffentlichkeitsbeauftragten, EDÖB; in der EU bei der Aufsichtsbehörde deines Wohnlandes). Außer Feedback, das du uns freiwillig
+  schickst (Abschnitt 6), speichern wir keine personenbezogenen Daten über dich. Feedback löschen wir auf Anfrage
+  (<a href="#loeschen">so geht’s</a>); darüber hinaus können wir in der Regel keine Daten herausgeben oder löschen – deine Spielstände
+  kannst du jederzeit selbst löschen. Bei Fragen erreichst du uns unter der oben genannten E-Mail-Adresse.</p>
 
-  <h3 id="webseite">8. Diese Webseite</h3>
+  <h3 id="webseite">9. Diese Webseite</h3>
   <p>Diese Datenschutzerklärung wird über GitHub Pages bereitgestellt (GitHub, Inc., 88 Colin P. Kelly Jr. Street,
   San Francisco, CA 94107, USA). Beim Aufruf verarbeitet GitHub technisch notwendige Daten wie deine IP-Adresse,
   um die Seite auszuliefern und vor Angriffen zu schützen. Die Seite selbst verwendet keine Cookies, keine Skripte
   und keine eingebundenen Inhalte Dritter. Datenschutzerklärung von GitHub:
   <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
 
-  <h3>9. Änderungen</h3>
+  <h3>10. Änderungen</h3>
   <p>Wenn sich die App so ändert, dass Daten anders verarbeitet werden, passen wir diese Datenschutzerklärung an. Es gilt die
   jeweils hier veröffentlichte Fassung.</p>
 </section>
@@ -124,10 +187,12 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
 <!-- ======================================================= ENGLISH -->
 <section id="en" lang="en">
   <h2>Privacy Policy</h2>
-  <p class="lead">for the app “Fuzzy Meadow” (Android) · Last updated: 11 October 2026</p>
+  <p class="lead">for the app “Fuzzy Meadow” (Android) · Last updated: 7 November 2026</p>
 
-  <div class="box"><b>In short:</b> Fuzzy Meadow does not collect any personal data. The app has no user accounts, no ads,
-  no tracking, no analytics and does not connect to the internet. Your game progress stays on your device.</div>
+  <div class="box"><b>In short:</b> Fuzzy Meadow does not collect any personal data while you play. The app has no user accounts, no ads,
+  no tracking and no analytics, and your game progress stays on your device. The regular version does not connect to the internet.
+  <b>The only exception is the test version:</b> there, adults can choose to send feedback (section 6). Only sending that feedback
+  needs internet. To have feedback you sent deleted, see <a href="#delete">“How to have your data deleted”</a>.</div>
 
   <h3>1. Controller</h3>
   <p>Jan-Niklas Dohm<br>
@@ -137,7 +202,8 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
   Email: <a href="mailto:support@konolfstudio.app">support@konolfstudio.app</a></p>
 
   <h3>2. What data does the app process?</h3>
-  <p>The app does <b>not collect, store or transmit any personal data</b> to us or to third parties. In particular there is:</p>
+  <p>While you play, the app does <b>not collect, store or transmit any personal data</b> to us or to third parties. The only exception is
+  feedback you choose to send in the test version (section 6). In particular there is:</p>
   <ul>
     <li>no registration and no user account,</li>
     <li>no advertising and no advertising IDs,</li>
@@ -145,19 +211,25 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
     <li>no access to location, contacts, camera, microphone, photos or other files,</li>
     <li>no chat or sharing features.</li>
   </ul>
-  <p>The app does not request the internet permission and therefore does not send any data over the internet.</p>
+  <p>The regular version of the app does not request the internet permission and therefore does not send any data over the internet.
+  The test version in the open test has this permission, but only uses it to send feedback that you submit yourself (section 6).
+  Playing needs no internet there either.</p>
 
   <h3>3. Game progress and settings on your device</h3>
   <p>So that you can continue playing, the app stores your game progress (your worlds with buildings, fluffballs and the names you
-  gave them, the play time) and your settings (e.g. volume, language, graphics) <b>only locally on your device</b>. We have no access
-  to this data. It is deleted when you uninstall the app.</p>
+  gave them, the play time) and your settings (e.g. volume, language, graphics and the age group chosen at first launch)
+  <b>only locally on your device</b>. We have no access to this data. You can remove individual worlds with “Delete” on the start
+  screen; all of this data is deleted when you uninstall the app.</p>
   <p>If automatic Android backup (“Google One / Android backup”) is turned on for your device, Android may back up this app data to
   your Google account and restore it when you reinstall. This backup is performed by Google/Android, not by us, and can be turned
   off in your device settings.</p>
 
   <h3>4. Children</h3>
-  <p>Fuzzy Meadow is suitable for children. As the app does not collect any personal data, no data of children is collected either.
-  Purchases can only be reached through a parents' area protected by a small arithmetic task.</p>
+  <p>Fuzzy Meadow is suitable for children. As the app does not collect any personal data during play, no data of children is collected
+  during play either. Purchases can only be reached through a parents' area protected by a small arithmetic task. The feedback window
+  of the test version (section 6) is meant for adults: it can also only be reached through this parental check, unless “18+” was chosen
+  as the answer to “How old are you?” at first launch. Only then does the test version also show a “Give feedback” button that opens
+  the window directly.</p>
 
   <h3>5. Buying the full version (in-app purchase)</h3>
   <p>Part of the game can be played for free; the full version can be unlocked with a one-time in-app purchase (no subscription).
@@ -171,31 +243,78 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
   advertising services).
   The <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> applies.</p>
 
-  <h3>6. Google Play Store</h3>
+  <h3 id="feedback-en">6. Feedback in the open test (test version only)</h3>
+  <p>This section only applies to the test version we distribute in the open test on Google Play. The regular version cannot send feedback.
+  In the test version the app occasionally asks for feedback (“Mail for parents”). Giving feedback is up to you; the app works without it.
+  How the feedback window can be reached is described in section 4.</p>
+  <p><b>What is sent.</b> Only when you tap “Send”, the app sends the following in encrypted form (HTTPS) to our address
+  feedback.konolfstudio.app:</p>
+  <ul>
+    <li>the text you wrote,</li>
+    <li>your email address, if you enter it for the voucher (optional; without an address we cannot send you a voucher),</li>
+    <li>these game values, so that we can put the feedback into context: app version, game language, village level reached,
+    playing time in minutes, number of goals reached, the age group chosen at first launch and the reason for asking.</li>
+  </ul>
+  <p>No names, save games or device identifiers are sent. Please do not write anything personal about your child.</p>
+  <p><b>How it reaches us.</b> The feedback is not stored in a database but delivered as an email to our mailbox at Outlook.com
+  (Microsoft). Delivery runs through Cloudflare Workers and Email Routing by Cloudflare, Inc., 101 Townsend Street, San Francisco,
+  CA 94107, USA, acting on our behalf. Cloudflare also processes technically necessary data such as your IP address. We only use the
+  IP address briefly to limit abuse (no more than 5 messages per minute) and do not keep it. Cloudflare and Microsoft may also process
+  data in the USA; both are certified under the EU-U.S. and the Swiss-U.S. Data Privacy Framework. The
+  <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare Privacy Policy</a> and the
+  <a href="https://www.microsoft.com/en-us/privacy/privacystatement" rel="noopener">Microsoft Privacy Statement</a> apply.</p>
+  <p><b>By email.</b> You can tap “Write an email” instead. The app then opens a prepared email in your email app; the app itself sends
+  nothing in this case. The game values are visible at the bottom of the text, and you can delete them before sending. If you send the
+  email, we process your email address and the content of your message.</p>
+  <p><b>Purpose and legal basis.</b> We use your feedback to improve the game and – if you give an email address – to send you a
+  full-version voucher at the official launch. The legal basis is your consent (Art. 6(1)(a) GDPR) or carrying out the voucher offer
+  (Art. 6(1)(b) GDPR); in Switzerland the principles of the FADP apply. You can withdraw your consent at any time by emailing
+  <a href="mailto:support@konolfstudio.app">support@konolfstudio.app</a>.</p>
+  <p><b>Retention.</b> We delete your email address no later than 3 months after the vouchers have been sent or the offer has ended.
+  The content of the feedback and the game values are kept without the email address for as long as we need them to develop the game,
+  and no longer than 12 months after the end of the test.</p>
+  <p><b>Children.</b> Children should not send feedback on their own or enter personal data. If we learn that a child has entered data,
+  we delete it.</p>
+
+  <div class="box" id="delete"><b>How to have your data deleted:</b>
+  <ol>
+    <li>Send an email to <a href="mailto:support@konolfstudio.app?subject=Delete%20Fuzzy%20Meadow">support@konolfstudio.app</a>
+    with the subject “Delete Fuzzy Meadow”.</li>
+    <li>Tell us the email address you entered with your feedback or wrote to us from. If you did not enter one, tell us roughly the date
+    and a few words from your feedback so we can find it.</li>
+    <li>Within one month we delete everything we have about your feedback (feedback text, email address and game values)
+    and confirm this to you by email. We keep none of it.</li>
+  </ol>
+  Without a request, we delete this data according to the periods above, no later than 12 months after the end of the test. Game progress
+  and settings are only stored on your device; you delete them yourself by deleting a world on the start screen or by uninstalling the app
+  (section 3). There is no user account that would need to be deleted.</div>
+
+  <h3>7. Google Play Store</h3>
   <p>When you download the app from Google Play, Google processes data under its own responsibility (e.g. your Google account and
   download information). We have no influence on this. Statistics we see in the Google Play Console are aggregated and do not identify
   individual people.</p>
 
-  <h3>7. Your rights</h3>
+  <h3>8. Your rights</h3>
   <p>Under the Swiss Federal Act on Data Protection (FADP) or – if you live in the EU – the General Data Protection Regulation (GDPR),
   you have the right of access, rectification, erasure, restriction of processing, data portability and objection, and the right to
   lodge a complaint with a data protection supervisory authority (in Switzerland the Federal Data Protection and Information
-  Commissioner, FDPIC; in the EU the authority of your country of residence). As we do not store any personal data about you, we usually cannot provide or delete any data –
-  you can delete your game progress at any time yourself by deleting a world in the game or uninstalling the app. If you have any
-  questions, contact us at the email address above.</p>
+  Commissioner, FDPIC; in the EU the authority of your country of residence). Apart from feedback you choose to send us (section 6), we do not
+  store any personal data about you. We delete feedback on request (<a href="#delete">how it works</a>); beyond that we usually cannot
+  provide or delete any data – you can delete your game progress at any time yourself. If you have any questions, contact us at the
+  email address above.</p>
 
-  <h3 id="website">8. This website</h3>
+  <h3 id="website">9. This website</h3>
   <p>This privacy policy is hosted on GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA).
   When you open it, GitHub processes technically necessary data such as your IP address to deliver the page and protect it from
   attacks. The page itself uses no cookies, no scripts and no embedded third-party content. GitHub's privacy policy:
   <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
 
-  <h3>9. Changes</h3>
+  <h3>10. Changes</h3>
   <p>If the app changes in a way that affects how data is processed, we will update this privacy policy. The version published here
   applies.</p>
 </section>
 
-<footer>Fuzzy Meadow · <a href="#de">Datenschutz</a> · <a href="#en">Privacy</a></footer>
+<footer>Fuzzy Meadow · <a href="#de">Datenschutz</a> · <a href="#en">Privacy</a> · <a href="#loeschen">Daten löschen</a> · <a href="#delete">Delete data</a></footer>
 </main>
 </body>
 </html>
