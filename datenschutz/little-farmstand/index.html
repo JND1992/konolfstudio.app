@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Datenschutzerklärung Little Farmstand, Fassung 2 (Stand 23.10.2026: Vollversion per Google-Play-Kauf).
+  Datenschutzerklärung Little Farmstand, Fassung 3 (Stand 07.11.2026: Feedback im offenen Test, Abschnitt „Daten löschen lassen“ mit Anker #loeschen / #delete).
   Von Claude nach dem Code-Stand entworfen (keine Rechtsberatung), Angaben zum Verantwortlichen von Jan.
   Veröffentlicht unter https://konolfstudio.app/datenschutz/little-farmstand/
   (Repo JND1992/konolfstudio.app, Datei datenschutz/little-farmstand/index.html).
@@ -47,12 +47,12 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
 <!-- ======================================================= DEUTSCH -->
 <section id="de" lang="de">
   <h2>Datenschutzerklärung</h2>
-  <p class="lead">für die App „Little Farmstand“ (Android) · Stand: 2. November 2026</p>
+  <p class="lead">für die App „Little Farmstand“ (Android) · Stand: 7. November 2026</p>
 
   <div class="box"><b>Kurz gesagt:</b> Little Farmstand erhebt keine personenbezogenen Daten. Die App hat keine Benutzerkonten,
   keine Werbung, kein Tracking und keine Analyse-Werkzeuge und verbindet sich nicht selbst mit dem Internet. Sie ist eine
   kostenlose Demo; die Vollversion kannst du einmalig über Google Play kaufen. Den Kauf wickelt Google ab, wir erhalten dabei
-  keine Zahlungsdaten. Dein Spielstand bleibt auf deinem Gerät.</div>
+  keine Zahlungsdaten. Dein Spielstand bleibt auf deinem Gerät. <b>Ausnahme:</b> In der Testversion kannst du uns Feedback schicken (siehe Abschnitt 5).</div>
 
   <h3>1. Verantwortlicher</h3>
   <p>Jan-Niklas Dohm<br>
@@ -62,7 +62,7 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
   E-Mail: <a href="mailto:support@konolfstudio.app">support@konolfstudio.app</a></p>
 
   <h3>2. Welche Daten verarbeitet die App?</h3>
-  <p>Die App erhebt, speichert oder übermittelt <b>keine personenbezogenen Daten</b> an uns oder an Dritte. Insbesondere gibt es:</p>
+  <p>Die App erhebt, speichert oder übermittelt <b>keine personenbezogenen Daten</b> an uns oder an Dritte, abgesehen vom Feedback in der Testversion (Abschnitt 5). Insbesondere gibt es:</p>
   <ul>
     <li>keine Registrierung und kein Benutzerkonto,</li>
     <li>keine Werbung und keine Werbe-IDs,</li>
@@ -71,7 +71,7 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
     <li>keinen Zugriff auf Standort, Kontakte, Kamera, Mikrofon, Fotos oder andere Dateien,</li>
     <li>keine Chat- oder Teilen-Funktionen.</li>
   </ul>
-  <p>Die App fordert keine Internet-Berechtigung an und sendet selbst keine Daten über das Internet. Für den Kauf der Vollversion
+  <p>Die reguläre App fordert keine Internet-Berechtigung an und sendet selbst keine Daten über das Internet. Für den Kauf der Vollversion
   spricht sie nur mit der Google-Play-Store-App auf deinem Gerät (Berechtigung „Google Play Billing“).</p>
 
   <h3>3. Spielstand, Rangliste und Einstellungen auf deinem Gerät</h3>
@@ -91,32 +91,57 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
   die Vollversion gekauft wurde (beim Start, beim Kauf und bei „Kauf wiederherstellen“). Wir erhalten von Google zur Abrechnung
   die üblichen Kaufangaben (z.&nbsp;B. Bestellnummer, Datum, Preis und Land), aber weder deinen Namen noch deine Zahlungsdaten.
   Es sind keine weiteren Fremd-SDKs eingebunden.</p>
-  <h3>5. Kinder</h3>
-  <p>Die App erhebt keine personenbezogenen Daten, auch nicht von Kindern. Käufe sind nur über den Google-Play-Kaufdialog
+  <h3>5. Feedback in der Testversion</h3>
+  <p>Nur die Testversion aus dem offenen Test von Google Play hat ein Feedback-Fenster und dafür die Internet-Berechtigung. Die reguläre
+  App enthält weder das eine noch das andere. Wenn du dort auf „Senden“ tippst, übermittelt die App einmalig über eine verschlüsselte Verbindung:</p>
+  <ul>
+    <li>deinen Feedback-Text,</li>
+    <li>deine E-Mail-Adresse, falls du sie freiwillig angibst,</li>
+    <li>App-Version, Android-Version, Gerätemodell, Spielvariante, Spielzeit in Minuten und Sprache.</li>
+  </ul>
+  <p>Ohne dein Tippen auf „Senden“ wird nichts übertragen. Wir verwenden die Angaben, um das Spiel zu verbessern, und die E-Mail-Adresse,
+  um dir den Aktionscode für die Vollversion zu schicken und bei Rückfragen zu antworten. Rechtsgrundlage ist deine Einwilligung; du kannst sie jederzeit per E-Mail
+  widerrufen. Schreib bitte keine sensiblen Angaben in den Text.</p>
+  <p>Die Übermittlung läuft über Cloudflare, Inc. (Weiterleitung und E-Mail-Versand) mit Sitz in den USA und landet in unserem
+  E-Mail-Postfach. Dabei verarbeitet dieser Dienst auch technisch notwendige Daten wie deine IP-Adresse. Wir löschen dein Feedback und deine
+  E-Mail-Adresse, sobald wir sie nicht mehr brauchen, spätestens 12 Monate nach dem Ende des Tests.</p>
+  <div class="box" id="loeschen"><b>Daten löschen lassen – so geht’s:</b>
+  <ol>
+    <li>Schreib eine E-Mail an <a href="mailto:support@konolfstudio.app?subject=L%C3%B6schen%20Little%20Farmstand">support@konolfstudio.app</a>
+    mit dem Betreff „Löschen Little Farmstand“.</li>
+    <li>Nenne die E-Mail-Adresse, die du im Feedback angegeben hast. Hast du keine angegeben, nenne ungefähr das Datum und ein paar Worte
+    aus deinem Feedback, damit wir es finden.</li>
+    <li>Wir löschen innerhalb eines Monats alles, was wir zu deinem Feedback haben (Feedback-Text, E-Mail-Adresse, App- und Geräteangaben),
+    und bestätigen dir das per E-Mail. Wir behalten davon nichts.</li>
+  </ol>
+  Ohne Anfrage löschen wir diese Daten spätestens 12 Monate nach dem Ende des Tests. Spielstand, Rangliste und Einstellungen liegen nur auf
+  deinem Gerät; du löschst sie selbst über „Neues Spiel“ oder durch Deinstallieren der App (siehe Abschnitt 3).</div>
+  <h3>6. Kinder</h3>
+  <p>Die reguläre App erhebt keine personenbezogenen Daten, auch nicht von Kindern. Das Feedback-Fenster der Testversion richtet sich nicht an Kinder unter 16 Jahren; sie geben bitte keine E-Mail-Adresse an. Käufe sind nur über den Google-Play-Kaufdialog
   möglich, der durch die Jugendschutz- und Kaufbestätigungs-Einstellungen von Google Play (z.&nbsp;B. Family Link) geschützt
   werden kann. Die App zeigt keine Werbung und drängt nicht zum Kauf.</p>
-  <h3>6. Google Play Store</h3>
+  <h3>7. Google Play Store</h3>
   <p>Wenn du die App über Google Play herunterlädst, verarbeitet Google dabei Daten in eigener Verantwortung (z.&nbsp;B. dein
   Google-Konto und Download-Informationen). Darauf haben wir keinen Einfluss. Statistiken, die wir in der Google Play Console sehen,
   sind zusammengefasst und lassen keinen Rückschluss auf einzelne Personen zu. Es gilt die
   <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>.</p>
 
-  <h3>7. Deine Rechte</h3>
+  <h3>8. Deine Rechte</h3>
   <p>Du hast nach dem Schweizer Datenschutzgesetz (DSG) bzw. – wenn du in der EU wohnst – nach der Datenschutz-Grundverordnung
   (DSGVO) das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch
   sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (in der Schweiz beim Eidgenössischen
-  Datenschutz- und Öffentlichkeitsbeauftragten, EDÖB; in der EU bei der Aufsichtsbehörde deines Wohnlandes). Da wir keine
-  personenbezogenen Daten über dich speichern, können wir in der Regel keine Daten herausgeben oder löschen – deine Spielstände
+  Datenschutz- und Öffentlichkeitsbeauftragten, EDÖB; in der EU bei der Aufsichtsbehörde deines Wohnlandes). Abgesehen von Feedback, das du uns geschickt hast,
+  speichern wir keine personenbezogenen Daten über dich und können in der Regel keine Daten herausgeben oder löschen – deine Spielstände
   kannst du jederzeit selbst löschen. Bei Fragen erreichst du uns unter der oben genannten E-Mail-Adresse.</p>
 
-  <h3 id="webseite">8. Diese Webseite</h3>
+  <h3 id="webseite">9. Diese Webseite</h3>
   <p>Diese Datenschutzerklärung wird über GitHub Pages bereitgestellt (GitHub, Inc., 88 Colin P. Kelly Jr. Street,
   San Francisco, CA 94107, USA). Beim Aufruf verarbeitet GitHub technisch notwendige Daten wie deine IP-Adresse,
   um die Seite auszuliefern und vor Angriffen zu schützen. Die Seite selbst verwendet keine Cookies, keine Skripte
   und keine eingebundenen Inhalte Dritter. Datenschutzerklärung von GitHub:
   <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
 
-  <h3>9. Änderungen</h3>
+  <h3>10. Änderungen</h3>
   <p>Wenn sich die App so ändert, dass Daten anders verarbeitet werden, passen wir diese Datenschutzerklärung an. Es gilt die
   jeweils hier veröffentlichte Fassung.</p>
 </section>
@@ -124,11 +149,11 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
 <!-- ======================================================= ENGLISH -->
 <section id="en" lang="en">
   <h2>Privacy Policy</h2>
-  <p class="lead">for the app “Little Farmstand” (Android) · Last updated: 2 November 2026</p>
+  <p class="lead">for the app “Little Farmstand” (Android) · Last updated: 7 November 2026</p>
 
   <div class="box"><b>In short:</b> Little Farmstand does not collect any personal data. The app has no user accounts, no ads,
   no tracking and no analytics, and does not connect to the internet itself. It is a free demo; you can buy the full version
-  once via Google Play. Google handles the purchase and we receive no payment data. Your game progress stays on your device.</div>
+  once via Google Play. Google handles the purchase and we receive no payment data. Your game progress stays on your device. <b>Exception:</b> In the test version you can send us feedback (see section 5).</div>
 
   <h3>1. Controller</h3>
   <p>Jan-Niklas Dohm<br>
@@ -138,7 +163,7 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
   Email: <a href="mailto:support@konolfstudio.app">support@konolfstudio.app</a></p>
 
   <h3>2. What data does the app process?</h3>
-  <p>The app does <b>not collect, store or transmit any personal data</b> to us or to third parties. In particular there is:</p>
+  <p>The app does <b>not collect, store or transmit any personal data</b> to us or to third parties, apart from feedback in the test version (section 5). In particular there is:</p>
   <ul>
     <li>no registration and no user account,</li>
     <li>no advertising and no advertising IDs,</li>
@@ -147,7 +172,7 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
     <li>no access to location, contacts, camera, microphone, photos or other files,</li>
     <li>no chat or sharing features.</li>
   </ul>
-  <p>The app does not request the internet permission and does not send any data over the internet itself. To buy the full version
+  <p>The regular app does not request the internet permission and does not send any data over the internet itself. To buy the full version
   it only talks to the Google Play Store app on your device (“Google Play Billing” permission).</p>
 
   <h3>3. Game progress, leaderboard and settings on your device</h3>
@@ -167,30 +192,55 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
   Google account (at start, when buying and with “Restore purchase”). For accounting, Google provides us with the usual purchase
   details (e.g. order number, date, price and country), but neither your name nor your payment data. No other third-party SDKs are
   included.</p>
-  <h3>5. Children</h3>
-  <p>The app does not collect personal data, including from children. Purchases are only possible through the Google Play purchase
+  <h3>5. Feedback in the test version</h3>
+  <p>Only the test version from the Google Play open test has a feedback window and the internet permission it needs. The regular app has
+  neither. When you tap “Send” there, the app transmits once over an encrypted connection:</p>
+  <ul>
+    <li>your feedback text,</li>
+    <li>your email address, if you choose to enter it,</li>
+    <li>app version, Android version, device model, game mode, playing time in minutes and language.</li>
+  </ul>
+  <p>Nothing is transmitted unless you tap “Send”. We use this information to improve the game, and the email address to send you the promo
+  code for the full version and to reply to you if we have questions. The legal basis is your consent, which you can withdraw at any time by email.
+  Please do not include sensitive information in the text.</p>
+  <p>The transmission runs through Cloudflare, Inc. (forwarding and email delivery), based in the USA, and ends up in our
+  mailbox. This service also processes technically necessary data such as your IP address. We delete your feedback and email address once we no
+  longer need them, at the latest 12 months after the test ends.</p>
+  <div class="box" id="delete"><b>How to have your data deleted:</b>
+  <ol>
+    <li>Send an email to <a href="mailto:support@konolfstudio.app?subject=Delete%20Little%20Farmstand">support@konolfstudio.app</a>
+    with the subject “Delete Little Farmstand”.</li>
+    <li>Tell us the email address you entered with your feedback. If you did not enter one, tell us roughly the date and a few words
+    from your feedback so we can find it.</li>
+    <li>Within one month we delete everything we have about your feedback (feedback text, email address, app and device details)
+    and confirm this to you by email. We keep none of it.</li>
+  </ol>
+  Without a request, we delete this data at the latest 12 months after the test ends. Game progress, leaderboard and settings are stored
+  only on your device; you delete them yourself with “New game” or by uninstalling the app (see section 3).</div>
+  <h3>6. Children</h3>
+  <p>The regular app does not collect personal data, including from children. The feedback window of the test version is not intended for children under 16; they should not enter an email address. Purchases are only possible through the Google Play purchase
   dialog, which can be protected by Google Play's parental controls and purchase approval settings (e.g. Family Link). The app shows
   no ads and does not pressure anyone to buy.</p>
-  <h3>6. Google Play Store</h3>
+  <h3>7. Google Play Store</h3>
   <p>When you download the app from Google Play, Google processes data under its own responsibility (e.g. your Google account and
   download information). We have no influence on this. Statistics we see in the Google Play Console are aggregated and do not identify
   individual people. The <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> applies.</p>
 
-  <h3>7. Your rights</h3>
+  <h3>8. Your rights</h3>
   <p>Under the Swiss Federal Act on Data Protection (FADP) or – if you live in the EU – the General Data Protection Regulation (GDPR),
   you have the right of access, rectification, erasure, restriction of processing, data portability and objection, and the right to
   lodge a complaint with a data protection supervisory authority (in Switzerland the Federal Data Protection and Information
-  Commissioner, FDPIC; in the EU the authority of your country of residence). As we do not store any personal data about you, we
+  Commissioner, FDPIC; in the EU the authority of your country of residence). Apart from feedback you have sent us, we do not store any personal data about you and
   usually cannot provide or delete any data – you can delete your game progress at any time yourself. If you have any questions,
   contact us at the email address above.</p>
 
-  <h3 id="website">8. This website</h3>
+  <h3 id="website">9. This website</h3>
   <p>This privacy policy is hosted on GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA).
   When you open it, GitHub processes technically necessary data such as your IP address to deliver the page and protect it from
   attacks. The page itself uses no cookies, no scripts and no embedded third-party content. GitHub's privacy policy:
   <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
 
-  <h3>9. Changes</h3>
+  <h3>10. Changes</h3>
   <p>If the app changes in a way that affects how data is processed, we will update this privacy policy. The version published here
   applies.</p>
 </section>
