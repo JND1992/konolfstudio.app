@@ -15,6 +15,8 @@ datenschutz/
     index.html                     Datenschutzerklärung „Magic Brawl Odyssey“
   little-farmstand/
     index.html                     Datenschutzerklärung „Little Farmstand“
+  mortarkeep/
+    index.html                     Datenschutzerklärung „Mortarkeep“
 lizenzen/
   magic-brawl-odyssey/
     index.html                     Open-Source-Lizenzen „Magic Brawl Odyssey“ (erzeugt, nicht von Hand ändern)
@@ -64,6 +66,13 @@ Jede App bekommt unter `datenschutz/` einen eigenen Ordner mit einer `index.html
 - Quelle im Spielprojekt: `Docs/Store/datenschutz.html` (JND1992/LittleFarmstand) – Änderungen dort und hier gleich halten.
 - Die App sammelt keine Daten, hat keine Werbung, keine Käufe und keine Internet-Berechtigung
   (wird beim Build per `Assets/Game/Editor/ManifestFix.cs` entfernt).
+
+## Mortarkeep
+
+- Adresse: https://konolfstudio.app/datenschutz/mortarkeep/ (Deutsch `#de`, Englisch `#en`, Löschung `#loeschen` / `#delete`)
+- Quelle im Spielprojekt: `Docs/Store/datenschutz.html` (JND1992/Mortarkeep) – Änderungen dort und hier gleich halten.
+- Die App sammelt keine Daten, hat keine Werbung, keine Käufe und ruft keine Internet-Adressen auf. Kommt die geplante
+  Paywall (Google Play Billing), Feedback oder ein Online-Dienst dazu, die Erklärung vorher anpassen.
 
 ## Eigene Domain (optional)
 
