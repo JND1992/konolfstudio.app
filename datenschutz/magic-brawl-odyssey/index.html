@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <!--
   Datenschutzerklärung Magic Brawl Odyssey (am 05.10.2026 kurz "Arkambo", davor "Magic Run & Fight"; Name unter dem
-  Android-Symbol "Brawl Odyssey"), Fassung 8 (Stand 08.11.2026, veröffentlicht 08.11.2026, Jan: "Veröffentliche die
+  Android-Symbol "Brawl Odyssey"), Fassung 9 (Stand 13.11.2026, veröffentlicht 13.11.2026, Jan: "Passe Datenschutz an
+  und publische."): Abschnitt 3 d) Zweck der Welt-Liste im Koop-Hallo nach dem Koop-Gastpass (Spiel-Repo ad7d98e: der
+  Raum spielt die Welten des Gastgebers, CoopSession.TeamOwnsWorld / GuestPassWorld; die Liste geht weiter mit, weil
+  Gastgeber mit älterer Version sie brauchen; Protokoll bleibt 35, keine neuen Daten, der Hinweis zum Online-Koop
+  bleibt); Abschnitt 2 der Tag des Paket-Angebots nach Welt 1 und des Probe-Helds je Held (df6000a, PackOfferDay,
+  TryoutDay.<Held>); beides erst ab der App-Version nach 1.0.14; Änderungsliste, englische Fassung. Der Entwurf vom
+  08.11.2026 zur Altersfrage im Feedback-Formular des offenen Tests (damals "Fassung 9", Spiel-Repo 5456e72) ist NICHT
+  enthalten, weil kein veröffentlichter Build die Frage hat; wieder einbauen mit
+  git diff 7101bd3 5456e72 -- Docs/Koop/Legal/datenschutz.html, wenn ein solcher Build live geht),
+  Fassung 8 (Stand 08.11.2026, veröffentlicht 08.11.2026, Jan: "Veröffentliche die
   Datenschutzerklärung"; am 08.11. an den Dienst angepasst, der wirklich unter feedback.konolfstudio.app läuft: der
   gemeinsame Worker fuzzy-meadow-feedback aus dem Projekt Fuzzy Meadow, Tools/FeedbackWorker, für alle Spiele, Feld
   app = com.magicbrawlodyssey.game; höchstens 5 statt 3 Anfragen pro Minute und IP, Betreff mit Spielsprache.
@@ -112,7 +121,7 @@
 <main>
 
 <h1>Datenschutzerklärung für die App „Magic Brawl Odyssey“</h1>
-<p class="meta">Fassung 8 · Stand: 8. November 2026 · <a href="#english">English version below</a></p>
+<p class="meta">Fassung 9 · Stand: 13. November 2026 · <a href="#english">English version below</a></p>
 
 <p>
   Diese Erklärung beschreibt, welche Daten die Android-App „Magic Brawl Odyssey“ (früher „Arkambo“ bzw.
@@ -256,7 +265,9 @@
   <li>lokale Ranglisten; die Koop-Rangliste enthält auch die Namen deiner Mitspieler aus gewonnenen Koop-Runden,</li>
   <li>das Koop-Fehlerprotokoll (siehe <a href="#fehlerprotokoll">Abschnitt 5</a>),</li>
   <li>welche Meilensteine erreicht sind und wie oft und wann die App den Bewertungsdialog von Google angefragt hat
-    (siehe <a href="#google-play">unten</a>), im offenen Test auch, wie oft die Karte zum Feedback erschienen ist,</li>
+    (siehe <a href="#google-play">unten</a>), im offenen Test auch, wie oft die Karte zum Feedback erschienen ist; ab
+    der App-Version nach 1.0.14 auch, an welchem Tag dir die App zuletzt nach Welt 1 das Angebot zum Abenteuer-Paket
+    gezeigt hat und an welchem Tag du welchen Helden zuletzt ausprobiert hast,</li>
   <li>gespeicherte Koop-Räume: als Gastgeber deine Räume mit den Namen der Mitglieder und einem Hash-Wert ihrer
     Online-ID, als Mitglied eine Kopie (siehe <a href="#raeume">Abschnitt 3 h</a>),</li>
   <li>für den Online-Koop: deine Online-ID, das Anmelde-Token von Unity, eine zufällige
@@ -374,9 +385,12 @@
   <li>dein Held in diesem Raum mit Stufe und Ausrüstung; der Gastgeber erhält und speichert deinen ganzen
     Heldenstand im Raum (siehe <a href="#raeume">h</a>),</li>
   <li>an den Gastgeber: welche Helden und welche Welten du besitzt und ob du das Abenteuer-Paket gekauft hast (davon
-    hängt ab, welche Helden im Raum wählbar sind und welche Welten ihr spielen könnt – im Koop nur Welten, die alle
-    besitzen; fehlt dir eine, nennt die App dem Gastgeber deinen Namen und die Welt); als Gastgeber ergibt sich aus den
-    angebotenen Welten ausserdem, welche Welten du besitzt,</li>
+    hängt ab, welche Helden im Raum wählbar sind). Welche Welten ihr spielen könnt, richtet sich ab der App-Version
+    nach 1.0.14 nur nach den Welten des Gastgebers („Koop-Gastpass“: Gäste spielen im Raum des Gastgebers alle seine
+    Welten mit). Die Liste deiner Welten geht weiter an den Gastgeber, damit Räume mit älteren App-Versionen
+    funktionieren: Dort spielt ihr im Koop nur Welten, die alle besitzen; fehlt dir eine, nennt die App dem Gastgeber
+    deinen Namen und die Welt. Als Gastgeber ergibt sich aus den angebotenen Welten ausserdem, welche Welten du
+    besitzt,</li>
   <li>technische Angaben wie die App-Version und eine zufällige Kennung zum Wiederverbinden,</li>
   <li>technisch auch deine Online-ID.</li>
 </ul>
@@ -755,6 +769,14 @@
   auf dieser Seite veröffentlichte Fassung. Bei wesentlichen Änderungen am Online-Koop zeigt die App den Hinweis zum
   Online-Koop erneut an.
 </p>
+<p class="small">Fassung 9 vom 13. November 2026. Neu gegenüber Fassung 8:</p>
+<ul class="small">
+  <li>Abschnitt 3 d): Ab der App-Version nach 1.0.14 spielt ein Koop-Raum die Welten des Gastgebers
+    („Koop-Gastpass“). Die Liste deiner Welten geht weiter an den Gastgeber, nur noch damit Räume mit älteren
+    App-Versionen funktionieren; dort spielt ihr im Koop nur Welten, die alle besitzen.</li>
+  <li>Abschnitt 2: Ab derselben Version merkt sich die App auf deinem Gerät, an welchem Tag sie dir zuletzt nach
+    Welt 1 das Angebot zum Abenteuer-Paket gezeigt hat und an welchem Tag du welchen Helden zuletzt ausprobiert hast.</li>
+</ul>
 <p class="small">Fassung 8 vom 8. November 2026. Neu gegenüber Fassung 7:</p>
 <ul class="small">
   <li>Einleitung, Abschnitte 1 und 9: In der Version für den offenen Test gibt es ein Feedback-Formular. Beim Senden
@@ -860,7 +882,8 @@
     orders/awards), coins, purchases, your chosen name, settings, your answers to the ad questions (under 16 or not,
     clips yes/no, personalised yes/no), local leaderboards (the co-op leaderboard also holds
     co-players' names), the co-op error log, which milestones you reached and when the app last asked for Google's
-    rating dialog, your Online ID, Unity's session token, a random installation ID and a random device ID are stored
+    rating dialog, from the app version after 1.0.14 also on which day the app last showed you the Adventure Pack offer
+    after world 1 and on which day you last tried each hero, your Online ID, Unity's session token, a random installation ID and a random device ID are stored
     on your device.</li>
   <li><strong>Updates and ratings via Google Play</strong> (only if installed from Google Play; Google Ireland Limited
     is responsible, the app only asks the Play Store app on your device): <em>In-App Updates</em> – the app asks
@@ -883,7 +906,9 @@
     names; a host who makes the table public lists it under “Open tables” for all players of the same app version,
     with the room name and the host's chosen name, and decides on each join request. Co-players receive your chosen name, hero, inputs, game state, your hero's
     level and gear in that room, app version and your Online ID; the host also receives which heroes and worlds you own and
-    whether you own the Adventure Pack (co-op plays only worlds everyone owns) – never your IP address. “Mit KI
+    whether you own the Adventure Pack (from the app version after 1.0.14 a room plays the host's worlds, “Koop-Gastpass”:
+    guests play all of them in the host's room; your world list is still sent only so that rooms work with older app
+    versions, where co-op plays only worlds everyone owns) – never your IP address. “Mit KI
     spielen” (co-op with AI heroes only) runs on your device alone and connects to nothing. “Freunde einladen” (invite
     friends) shares a link to the game's Google Play page, without any ID of yours. Before the first co-op game the app shows a short
     notice with a link to this policy (version 4 also covers public tables, so it shows once more if you confirmed
@@ -957,6 +982,10 @@
   <li><strong>This page</strong> is hosted on GitHub Pages (GitHub, Inc., USA), which processes your IP address to
     deliver it. No cookies, no scripts.</li>
 </ul>
+<p class="small">Version 9 of 13 November 2026 (new: from the app version after 1.0.14 a co-op room plays the host's
+  worlds (“Koop-Gastpass”); your world list still goes to the host only so that rooms work with older app versions,
+  where co-op plays only worlds everyone owns; the app remembers on your device on which day it last showed you the
+  Adventure Pack offer after world 1 and on which day you last tried each hero).</p>
 <p class="small">Version 8 of 8 November 2026 (new: the feedback form of the open-test version – your text, a voluntary
   e-mail address for the promo code, app version, device model, Android version and game language go through a small
   service on Cloudflare as one e-mail to my mailbox; the promo code goes to the address given or in reply to your
