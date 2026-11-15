@@ -1,14 +1,18 @@
 <!doctype html>
 <!--
-  Datenschutzerklärung Fuzzy Meadow, Fassung 2 (Stand 07.11.2026): Abschnitt 6 zum Feedback-Versand im offenen Test
-  (Beta-Bundle FM_OPEN_BETA, Cloudflare-Worker feedback.konolfstudio.app → Postfach bei Outlook.com) und Kasten
-  „Daten löschen lassen“ mit Anker #loeschen / #delete (Link für die Play Console, Datensicherheit).
+  Datenschutzerklärung Fuzzy Meadow, Fassung 3 (Stand 15.11.2026): neuer Abschnitt 7 zu den freiwilligen Werbevideos
+  (Unity Ads, Glücksmünzen), dazu Kurz-gesagt-Kasten, Abschnitte 2–5, Löschen-Kasten und „Deine Rechte“ angepasst;
+  bisherige Abschnitte 7–10 → 8–11. Feedback bleibt Abschnitt 6 (darauf verweisen die Teilnahmebedingungen).
+  Veröffentlicht vor dem Werbe-Release, deshalb mit Übergangshinweis „kommen mit einem der nächsten Updates“
+  (Kurz-gesagt-Kasten, Abschnitt 2 und Anfang von Abschnitt 7, je DE + EN). Mit dem Werbe-Release entfernen und „Stand“ anpassen.
+  Anker #werbung / #ads: Ziel des Knopfs „Datenschutz“ in der Elternseite (Coins.PrivacyLink) – nicht umbenennen.
+  Fassung 2 (Stand 07.11.2026): Abschnitt 6 zum Feedback-Versand im offenen Test und Kasten „Daten löschen lassen“
+  mit Anker #loeschen / #delete (Link für die Play Console, Datensicherheit).
   Fassung 1 (Stand 10./11.10.2026): App ganz ohne Internet.
   Von Claude nach dem Code-Stand entworfen (keine Rechtsberatung), Angaben zum Verantwortlichen von Jan.
   Veröffentlicht unter https://konolfstudio.app/datenschutz/fuzzy-meadow/
   (Repo JND1992/konolfstudio.app, Datei datenschutz/fuzzy-meadow/index.html).
   Quelle im Spielprojekt: Docs/Datenschutz/index.html – Änderungen dort UND im veröffentlichten Repo nachziehen.
-  Prüfliste und Play-Console-Angaben: Docs/Feedback/Datenschutz_Ergaenzung.md
 -->
 <html lang="de">
 <head>
@@ -54,13 +58,18 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
 <!-- ======================================================= DEUTSCH -->
 <section id="de" lang="de">
   <h2>Datenschutzerklärung</h2>
-  <p class="lead">für die App „Fuzzy Meadow“ (Android) · Stand: 7. November 2026</p>
+  <p class="lead">für die App „Fuzzy Meadow“ (Android) · Stand: 15. November 2026</p>
 
-  <div class="box"><b>Kurz gesagt:</b> Beim Spielen erhebt Fuzzy Meadow keine personenbezogenen Daten. Die App hat keine Benutzerkonten,
-  keine Werbung, kein Tracking und keine Analyse-Werkzeuge, und dein Spielstand bleibt auf deinem Gerät. Die reguläre Version
-  verbindet sich nicht mit dem Internet. <b>Einzige Ausnahme ist die Testversion:</b> Dort können Erwachsene freiwillig Feedback
-  abschicken (Abschnitt 6). Nur dieses Absenden braucht Internet. Wie du gesendetes Feedback löschen lassen kannst, steht unter
-  <a href="#loeschen">„Daten löschen lassen“</a>.</div>
+  <div class="box"><b>Kurz gesagt:</b> Fuzzy Meadow hat keine Benutzerkonten und keine Analyse-Werkzeuge und nutzt keine Werbe-ID.
+  Dein Spielstand bleibt auf deinem Gerät, und spielen kannst du ohne Internet. Ins Internet geht die App nur in zwei Fällen,
+  die ihr selbst einschaltet:
+  <ol>
+    <li><b>Freiwillige Werbevideos:</b> nur, wenn Eltern sie im Elternbereich erlauben, und nie in der Vollversion. Dann erhält
+    Unity, der Anbieter der Videos, Daten deines Geräts, und es wird nur nicht personalisierte Werbung gezeigt
+    (<a href="#werbung">Abschnitt 7</a>). Die Videos kommen mit einem der nächsten Updates.</li>
+    <li><b>Feedback in der Testversion:</b> Erwachsene können freiwillig Feedback abschicken (<a href="#feedback">Abschnitt 6</a>).</li>
+  </ol>
+  Wie du Daten löschen lassen kannst, steht unter <a href="#loeschen">„Daten löschen lassen“</a>.</div>
 
   <h3>1. Verantwortlicher</h3>
   <p>Jan-Niklas Dohm<br>
@@ -70,45 +79,55 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
   E-Mail: <a href="mailto:support@konolfstudio.app">support@konolfstudio.app</a></p>
 
   <h3>2. Welche Daten verarbeitet die App?</h3>
-  <p>Beim Spielen erhebt, speichert oder übermittelt die App <b>keine personenbezogenen Daten</b> an uns oder an Dritte. Die einzige
-  Ausnahme ist Feedback, das du in der Testversion freiwillig abschickst (Abschnitt 6). Insbesondere gibt es:</p>
+  <p>Beim Spielen erhebt, speichert oder übermittelt die App <b>keine personenbezogenen Daten</b> an uns oder an Dritte. Ausnahmen
+  sind nur die freiwilligen Werbevideos, wenn Eltern sie erlauben (Abschnitt 7), und Feedback, das du in der Testversion freiwillig
+  abschickst (Abschnitt 6). Insbesondere gibt es:</p>
   <ul>
     <li>keine Registrierung und kein Benutzerkonto,</li>
-    <li>keine Werbung und keine Werbe-IDs,</li>
-    <li>keine Analyse-, Statistik- oder Tracking-Dienste,</li>
-    <li>keinen Zugriff auf Standort, Kontakte, Kamera, Mikrofon, Fotos oder andere Dateien,</li>
+    <li>keine Werbe-ID: Die App streicht die Berechtigung dafür, auch wenn eine eingebundene Bibliothek sie anfordert,</li>
+    <li>keine personalisierte Werbung; Werbung gibt es nur als freiwillige Videos, die Eltern erlauben (Abschnitt 7),</li>
+    <li>keine Analyse- oder Statistikdienste (was Unity bei den Werbevideos verarbeitet, steht in Abschnitt 7),</li>
+    <li>keinen Zugriff auf den Gerätestandort, Kontakte, Kamera, Mikrofon, Fotos oder andere Dateien,</li>
     <li>keine Chat- oder Teilen-Funktionen.</li>
   </ul>
-  <p>Die reguläre Version der App fordert keine Internet-Berechtigung an und sendet daher keine Daten über das Internet.
-  Die Testversion im offenen Test hat diese Berechtigung, nutzt sie aber nur für das Absenden von Feedback, das du selbst auslöst (Abschnitt 6).
-  Gespielt wird auch dort ohne Internet.</p>
+  <p>Die reguläre Version der App fordert die Internet-Berechtigung nur an, um die freiwilligen Werbevideos zu laden (Abschnitt 7); bis zu dem Update mit
+  den Werbevideos hat sie keine Internet-Berechtigung.
+  Solange die Werbevideos im Elternbereich ausgeschaltet sind – so ist es nach der Installation – und sobald alle Dorfstufen
+  freigeschaltet sind (mit der Vollversion oder mit Glücksmünzen), startet die App die Werbe-Software nicht und sendet keine Daten
+  über das Internet. Gespielt wird ohne Internet. Die Testversion im offenen Test zeigt keine Werbevideos; sie nutzt die
+  Internet-Berechtigung nur für das Absenden von Feedback, das du selbst auslöst (Abschnitt 6).</p>
 
   <h3>3. Spielstand und Einstellungen auf deinem Gerät</h3>
   <p>Damit du weiterspielen kannst, speichert die App deinen Spielstand (deine Welten mit Gebäuden, Knäueln und den von dir
-  vergebenen Namen, die Spielzeit) und deine Einstellungen (z.&nbsp;B. Lautstärke, Sprache, Grafik und die Altersgruppe, die beim
-  ersten Start gewählt wurde) <b>nur lokal auf deinem Gerät</b>. Wir haben darauf keinen Zugriff. Einzelne Welten kannst du auf dem
+  vergebenen Namen, die Spielzeit), deine Glücksmünzen und wie viele Videos heute schon angesehen wurden sowie deine Einstellungen
+  (z.&nbsp;B. Lautstärke, Sprache, Grafik, die Altersgruppe, die beim ersten Start gewählt wurde, und ob Eltern Werbevideos erlaubt
+  haben) <b>nur lokal auf deinem Gerät</b>. Wir haben darauf keinen Zugriff. Einzelne Welten kannst du auf dem
   Startbildschirm mit „Löschen“ entfernen; beim Deinstallieren der App werden alle diese Daten gelöscht.</p>
   <p>Wenn auf deinem Gerät die automatische Android-Sicherung („Google One / Android-Backup“) eingeschaltet ist, kann Android
   diese App-Daten in deinem Google-Konto sichern und bei einer Neuinstallation wiederherstellen. Diese Sicherung wird von
   Google bzw. Android durchgeführt, nicht von uns, und kann in den Einstellungen deines Geräts abgeschaltet werden.</p>
 
   <h3>4. Kinder</h3>
-  <p>Fuzzy Meadow ist für Kinder geeignet. Da die App beim Spielen keine personenbezogenen Daten erhebt, werden dabei auch keine Daten
-  von Kindern erhoben. Käufe sind nur über einen Elternbereich mit einer Rechenaufgabe erreichbar. Das Feedback-Fenster der
-  Testversion (Abschnitt 6) richtet sich an Erwachsene: Es ist ebenfalls nur über diese Eltern-Abfrage erreichbar, außer wenn beim
-  ersten Start auf die Frage „Wie alt bist du?“ die Antwort „18+“ gewählt wurde. Nur dann zeigt die Testversion zusätzlich einen
-  Knopf „Feedback geben“, der das Fenster direkt öffnet.</p>
+  <p>Fuzzy Meadow ist für Kinder geeignet. Beim Spielen selbst erhebt die App keine personenbezogenen Daten, also auch keine Daten
+  von Kindern. Käufe und der Schalter für die Werbevideos sind nur über einen Elternbereich mit einer Rechenaufgabe erreichbar: Ob
+  Werbevideos gezeigt werden, entscheiden also die Eltern; nach der Installation sind sie aus. Für die Videos ist Fuzzy Meadow bei
+  Unity als an Kinder gerichtet gekennzeichnet, und die App meldet Unity, dass nur nicht personalisierte Werbung gezeigt werden darf
+  (Abschnitt 7). Das Feedback-Fenster der Testversion (Abschnitt 6) richtet sich an Erwachsene: Es ist ebenfalls nur über diese
+  Eltern-Abfrage erreichbar, außer wenn beim ersten Start auf die Frage „Wie alt bist du?“ die Antwort „18+“ gewählt wurde. Nur dann
+  zeigt die Testversion zusätzlich einen Knopf „Feedback geben“, der das Fenster direkt öffnet.</p>
 
   <h3>5. Kauf der Vollversion (In-App-Kauf)</h3>
   <p>Ein Teil des Spiels kann kostenlos gespielt werden; die Vollversion kann über einen einmaligen In-App-Kauf freigeschaltet
-  werden (kein Abo). Der Kauf wird vollständig über <b>Google Play</b> abgewickelt. Dabei verarbeitet Google die für den Kauf
-  nötigen Daten (z.&nbsp;B. dein Google-Konto und deine Zahlungsdaten) in eigener Verantwortung. Wir erhalten keine Zahlungsdaten,
-  sondern von Google nur die Bestätigung, dass die Vollversion gekauft wurde; diese wird auf deinem Gerät gespeichert.</p>
+  werden (kein Abo). Statt zu kaufen, lassen sich die Dorfstufen auch nacheinander mit Glücksmünzen aus freiwilligen Werbevideos
+  freischalten (Abschnitt 7); die Vollversion zeigt keine Werbevideos. Der Kauf wird vollständig über <b>Google Play</b> abgewickelt.
+  Dabei verarbeitet Google die für den Kauf nötigen Daten (z.&nbsp;B. dein Google-Konto und deine Zahlungsdaten) in eigener
+  Verantwortung. Wir erhalten keine Zahlungsdaten, sondern von Google nur die Bestätigung, dass die Vollversion gekauft wurde; diese
+  wird auf deinem Gerät gespeichert.</p>
   <p>Technisch nutzt die App dafür die <b>Google Play Billing Library</b> von Google. Sie spricht nur mit der Play-Store-App auf
   deinem Gerät (dafür ist die Berechtigung „Google Play Billing“ nötig); die Verbindung zu den Servern von Google stellt der Play Store
-  selbst her. Die App selbst geht auch beim Kauf nicht ins Internet. Um eine bereits gekaufte Vollversion z.&nbsp;B. nach einer
+  selbst her. Die App selbst geht beim Kauf nicht ins Internet. Um eine bereits gekaufte Vollversion z.&nbsp;B. nach einer
   Neuinstallation wiederherzustellen, fragt die App den Play Store, ob dein Google-Konto die Vollversion besitzt.
-  Es werden dabei keine Daten an uns oder an andere Anbieter (etwa Analyse- oder Werbedienste) gesendet.
+  Beim Kauf werden keine Daten an uns oder an andere Anbieter (etwa Analyse- oder Werbedienste) gesendet.
   Es gilt die <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>.</p>
 
   <h3 id="feedback">6. Feedback im offenen Test (nur Testversion)</h3>
@@ -157,30 +176,88 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
   </ol>
   Ohne Anfrage löschen wir diese Daten nach den Fristen oben, spätestens 12 Monate nach dem Ende des Tests. Spielstand und Einstellungen
   liegen nur auf deinem Gerät; du löschst sie selbst, indem du eine Welt auf dem Startbildschirm löschst oder die App deinstallierst
-  (Abschnitt 3). Ein Benutzerkonto, das gelöscht werden müsste, gibt es nicht.</div>
+  (Abschnitt 3). Ein Benutzerkonto, das gelöscht werden müsste, gibt es nicht.<br>
+  <b>Werbevideos:</b> Daten, die Unity bei den Werbevideos erhält (Abschnitt 7), liegen bei Unity, nicht bei uns. Ihre Löschung kannst du
+  direkt bei Unity verlangen: über das Datenschutz-Symbol in einem Werbevideo oder per E-Mail an
+  <a href="mailto:DPO@unity3d.com">DPO@unity3d.com</a>. Schalten Eltern die Werbevideos im Elternbereich aus, lädt und zeigt die App
+  keine Videos mehr.</div>
 
-  <h3>7. Google Play Store</h3>
+  <h3 id="werbung">7. Freiwillige Werbevideos (Unity Ads)</h3>
+  <p><b>Hinweis:</b> Die Werbevideos kommen mit einem der nächsten Updates der App. Bis dein Gerät dieses Update hat, enthält die
+  App weder Werbung noch die Werbe-Software, und es gehen keine Daten an Unity.</p>
+  <p>In der kostenlosen Version lassen sich die Dorfstufen statt mit dem Kauf auch mit <b>Glücksmünzen</b> freischalten, eine nach der
+  anderen. Glücksmünzen gibt es für kurze, freiwillige Werbevideos: 10 Münzen pro Video, höchstens 10 Videos am Tag. Videos gibt es nur,
+  wenn Eltern sie im Elternbereich (hinter der Rechenaufgabe) unter „Werbevideos“ erlauben; nach der Installation sind sie aus. Ein Video
+  läuft nur, wenn im Spiel „Video schauen“ angetippt wird – Werbung, die sich von selbst öffnet, gibt es nicht. Sobald die Vollversion
+  gekauft oder alle Dorfstufen freigeschaltet sind, gibt es keine Videos mehr. Die Testversion im offenen Test zeigt keine Videos.</p>
+  <p><b>Anbieter.</b> Die Videos liefert das Werbenetzwerk <b>Unity Ads</b> von Unity Technologies SF, 116 New Montgomery Street,
+  Suite 200, San Francisco, CA 94105, USA („Unity“), über die in die App eingebundene Werbe-Software (Unity Ads SDK). Für das Erheben
+  der unten genannten Daten in der App und ihre Übermittlung an Unity sind wir mitverantwortlich, weil wir die Werbe-Software
+  eingebunden haben. Für alles, was Unity danach mit den Daten macht, ist Unity eigenständig verantwortlich; dafür gilt die unten
+  verlinkte Datenschutzerklärung von Unity. Deine Rechte kannst du bei uns oder direkt bei Unity geltend machen.</p>
+  <p><b>Wann Daten an Unity gehen.</b> Erst wenn Eltern die Werbevideos erlauben, startet die App die Werbe-Software und lädt ein Video
+  vorab – sofort und danach bei jedem Spielstart, solange noch eine Dorfstufe gesperrt ist. Dabei und wenn ein Video angesehen wird,
+  erhält Unity Daten, um Videos auszuliefern, zu zählen und abzurechnen und um Betrug zu verhindern. Solange die Videos aus sind, und
+  sobald alle Dorfstufen freigeschaltet sind, startet die App die Werbe-Software nicht.</p>
+  <p><b>Nur nicht personalisierte Werbung.</b> Fuzzy Meadow ist bei Unity als an Kinder gerichtet gekennzeichnet. Außerdem meldet die App
+  der Werbe-Software vor dem Start, dass keine Einwilligung in personalisierte Werbung vorliegt und nur nicht personalisierte Werbung
+  gezeigt werden darf. Unity zeigt dann nach eigenen Angaben nur kontextbezogene Werbung, die nicht auf Interessen oder früherem
+  Verhalten beruht. Die Werbe-ID deines Geräts (Advertising ID) kann die App nicht auslesen, weil die Berechtigung dafür aus der App
+  entfernt ist. Die Funktion „Acquire Optimization“, mit der Unity Ads zusätzlich erfassen würde, wann und wie lange die App genutzt
+  wird, haben wir nicht eingeschaltet.</p>
+  <p><b>Welche Daten.</b> Nach den Angaben von Unity (Datenschutzerklärung sowie Angaben zur Datensicherheit bei Google Play für
+  Unity Ads) können das sein:</p>
+  <ul>
+    <li>die IP-Adresse und der daraus abgeleitete ungefähre Standort (etwa Land oder Stadt),</li>
+    <li>Geräte- und Installationskennungen, die die Werbe-Software selbst vergibt (keine Werbe-ID),</li>
+    <li>Angaben zu Gerät und App, z.&nbsp;B. Gerätemodell, Betriebssystem, Sprache und App-Version,</li>
+    <li>die Interaktionen mit der Werbung: welche Videos gezeigt und ob sie zu Ende angesehen wurden und was im Video angetippt wird,</li>
+    <li>technische Diagnosedaten der Werbe-Software (z.&nbsp;B. Ladezeiten und Fehler),</li>
+    <li>laut den Datensicherheits-Angaben von Unity Ads außerdem Angaben zu Käufen (Kaufverlauf).</li>
+  </ul>
+  <p>Bei Nutzern, die als Kinder gelten, verwendet Unity nach eigenen Angaben nur die IP-Adresse (für den ungefähren Standort), eine
+  Installations-Kennung und eine vom Entwickler vergebene Nutzer-ID – eine solche Nutzer-ID vergeben wir nicht. Unity kann Daten nach
+  eigenen Angaben an Werbepartner weitergeben, etwa damit Werbung ausgeliefert und abgerechnet werden kann; Näheres steht in der
+  Datenschutzerklärung von Unity. Wir selbst erhalten von Unity keine Daten über einzelne Personen, nur zusammengefasste Zahlen
+  (z.&nbsp;B. wie viele Videos gezeigt wurden).</p>
+  <p><b>Ausland und Speicherdauer.</b> Unity verarbeitet die Daten in den USA und in weiteren Ländern. Für Übermittlungen in die USA hat
+  Unity die Standardvertragsklauseln der EU-Kommission vereinbart (Art. 46 Abs. 2 lit. c DSGVO), die auch für Übermittlungen aus der
+  Schweiz anerkannt sind (Art. 16 Abs. 2 lit. d DSG). Daten zu den Interaktionen mit der Werbung bewahrt Unity nach eigenen Angaben bis
+  zu 12 Monate auf; weitere Fristen nennt die Datenschutzerklärung von Unity.</p>
+  <p><b>Ausschalten.</b> Eltern können die Werbevideos im Elternbereich jederzeit wieder ausschalten. Ab dann lädt und zeigt die App
+  keine Videos mehr. Eine bereits gestartete Werbe-Software lässt sich technisch erst mit dem Beenden der App stoppen; ab dem nächsten
+  Start startet die App sie nicht mehr. Schon gesammelte Glücksmünzen und freigeschaltete Dorfstufen bleiben erhalten. Über das
+  Datenschutz-Symbol in einem Werbevideo könnt ihr außerdem direkt bei Unity die über das Gerät gesammelten Werbedaten einsehen und ihre
+  Löschung verlangen; oder ihr schreibt an <a href="mailto:DPO@unity3d.com">DPO@unity3d.com</a>.</p>
+  <p><b>Rechtsgrundlage.</b> Rechtsgrundlage ist die Einwilligung der Eltern, die sie mit dem Erlauben der Werbevideos im Elternbereich
+  geben (Art. 6 Abs. 1 lit. a und Art. 8 DSGVO; für Nutzer in Deutschland auch § 25 Abs. 1 TDDDG); in der Schweiz gelten die Grundsätze
+  des DSG. Die Einwilligung kann jederzeit mit Wirkung für die Zukunft widerrufen werden, indem die Werbevideos im Elternbereich
+  ausgeschaltet werden. Datenschutzhinweise von Unity zur Werbung:
+  <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">unity.com/legal/game-player-and-app-user-privacy-policy</a>.</p>
+
+  <h3>8. Google Play Store</h3>
   <p>Wenn du die App über Google Play herunterlädst, verarbeitet Google dabei Daten in eigener Verantwortung (z.&nbsp;B. dein
   Google-Konto und Download-Informationen). Darauf haben wir keinen Einfluss. Statistiken, die wir in der Google Play Console sehen,
   sind zusammengefasst und lassen keinen Rückschluss auf einzelne Personen zu.</p>
 
-  <h3>8. Deine Rechte</h3>
+  <h3>9. Deine Rechte</h3>
   <p>Du hast nach dem Schweizer Datenschutzgesetz (DSG) bzw. – wenn du in der EU wohnst – nach der Datenschutz-Grundverordnung
   (DSGVO) das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch
   sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (in der Schweiz beim Eidgenössischen
   Datenschutz- und Öffentlichkeitsbeauftragten, EDÖB; in der EU bei der Aufsichtsbehörde deines Wohnlandes). Außer Feedback, das du uns freiwillig
-  schickst (Abschnitt 6), speichern wir keine personenbezogenen Daten über dich. Feedback löschen wir auf Anfrage
+  schickst (Abschnitt 6), speichern wir keine personenbezogenen Daten über dich. Daten zu den Werbevideos liegen bei Unity, nicht bei
+  uns (Abschnitt 7); deine Rechte dazu kannst du bei uns oder direkt bei Unity geltend machen. Feedback löschen wir auf Anfrage
   (<a href="#loeschen">so geht’s</a>); darüber hinaus können wir in der Regel keine Daten herausgeben oder löschen – deine Spielstände
   kannst du jederzeit selbst löschen. Bei Fragen erreichst du uns unter der oben genannten E-Mail-Adresse.</p>
 
-  <h3 id="webseite">9. Diese Webseite</h3>
+  <h3 id="webseite">10. Diese Webseite</h3>
   <p>Diese Datenschutzerklärung wird über GitHub Pages bereitgestellt (GitHub, Inc., 88 Colin P. Kelly Jr. Street,
   San Francisco, CA 94107, USA). Beim Aufruf verarbeitet GitHub technisch notwendige Daten wie deine IP-Adresse,
   um die Seite auszuliefern und vor Angriffen zu schützen. Die Seite selbst verwendet keine Cookies, keine Skripte
   und keine eingebundenen Inhalte Dritter. Datenschutzerklärung von GitHub:
   <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
 
-  <h3>10. Änderungen</h3>
+  <h3>11. Änderungen</h3>
   <p>Wenn sich die App so ändert, dass Daten anders verarbeitet werden, passen wir diese Datenschutzerklärung an. Es gilt die
   jeweils hier veröffentlichte Fassung.</p>
 </section>
@@ -188,12 +265,18 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
 <!-- ======================================================= ENGLISH -->
 <section id="en" lang="en">
   <h2>Privacy Policy</h2>
-  <p class="lead">for the app “Fuzzy Meadow” (Android) · Last updated: 7 November 2026</p>
+  <p class="lead">for the app “Fuzzy Meadow” (Android) · Last updated: 15 November 2026</p>
 
-  <div class="box"><b>In short:</b> Fuzzy Meadow does not collect any personal data while you play. The app has no user accounts, no ads,
-  no tracking and no analytics, and your game progress stays on your device. The regular version does not connect to the internet.
-  <b>The only exception is the test version:</b> there, adults can choose to send feedback (section 6). Only sending that feedback
-  needs internet. To have feedback you sent deleted, see <a href="#delete">“How to have your data deleted”</a>.</div>
+  <div class="box"><b>In short:</b> Fuzzy Meadow has no user accounts and no analytics, and it does not use an advertising ID. Your
+  game progress stays on your device, and you can play without internet. The app only goes online in two cases that you switch on
+  yourselves:
+  <ol>
+    <li><b>Optional ad videos:</b> only if parents allow them in the parents' area, and never in the full version. Unity, the
+    provider of the videos, then receives data from your device, and only non-personalised ads are shown
+    (<a href="#ads">section 7</a>). The videos are coming with one of the next updates.</li>
+    <li><b>Feedback in the test version:</b> adults can choose to send feedback (<a href="#feedback-en">section 6</a>).</li>
+  </ol>
+  To have data deleted, see <a href="#delete">“How to have your data deleted”</a>.</div>
 
   <h3>1. Controller</h3>
   <p>Jan-Niklas Dohm<br>
@@ -203,45 +286,54 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
   Email: <a href="mailto:support@konolfstudio.app">support@konolfstudio.app</a></p>
 
   <h3>2. What data does the app process?</h3>
-  <p>While you play, the app does <b>not collect, store or transmit any personal data</b> to us or to third parties. The only exception is
-  feedback you choose to send in the test version (section 6). In particular there is:</p>
+  <p>While you play, the app does <b>not collect, store or transmit any personal data</b> to us or to third parties. The only exceptions
+  are the optional ad videos, if parents allow them (section 7), and feedback you choose to send in the test version (section 6).
+  In particular there is:</p>
   <ul>
     <li>no registration and no user account,</li>
-    <li>no advertising and no advertising IDs,</li>
-    <li>no analytics, statistics or tracking services,</li>
-    <li>no access to location, contacts, camera, microphone, photos or other files,</li>
+    <li>no advertising ID: the app removes the permission for it, even if an included library requests it,</li>
+    <li>no personalised advertising; ads only come as optional videos that parents allow (section 7),</li>
+    <li>no analytics or statistics services (what Unity processes for the ad videos is described in section 7),</li>
+    <li>no access to the device location, contacts, camera, microphone, photos or other files,</li>
     <li>no chat or sharing features.</li>
   </ul>
-  <p>The regular version of the app does not request the internet permission and therefore does not send any data over the internet.
-  The test version in the open test has this permission, but only uses it to send feedback that you submit yourself (section 6).
-  Playing needs no internet there either.</p>
+  <p>The regular version of the app only requests the internet permission to load the optional ad videos (section 7); until the update
+  with the ad videos it has no internet permission. As long as the
+  ad videos are switched off in the parents' area – which is how the app starts after installation – and once all village stages are
+  unlocked (with the full version or with lucky coins), the app does not start the ad software and does not send any data over the
+  internet. Playing needs no internet. The test version in the open test shows no ad videos; it only uses the internet permission to
+  send feedback that you submit yourself (section 6).</p>
 
   <h3>3. Game progress and settings on your device</h3>
   <p>So that you can continue playing, the app stores your game progress (your worlds with buildings, fluffballs and the names you
-  gave them, the play time) and your settings (e.g. volume, language, graphics and the age group chosen at first launch)
-  <b>only locally on your device</b>. We have no access to this data. You can remove individual worlds with “Delete” on the start
-  screen; all of this data is deleted when you uninstall the app.</p>
+  gave them, the play time), your lucky coins and how many videos have been watched today, and your settings (e.g. volume, language,
+  graphics, the age group chosen at first launch and whether parents have allowed ad videos) <b>only locally on your device</b>. We
+  have no access to this data. You can remove individual worlds with “Delete” on the start screen; all of this data is deleted when
+  you uninstall the app.</p>
   <p>If automatic Android backup (“Google One / Android backup”) is turned on for your device, Android may back up this app data to
   your Google account and restore it when you reinstall. This backup is performed by Google/Android, not by us, and can be turned
   off in your device settings.</p>
 
   <h3>4. Children</h3>
-  <p>Fuzzy Meadow is suitable for children. As the app does not collect any personal data during play, no data of children is collected
-  during play either. Purchases can only be reached through a parents' area protected by a small arithmetic task. The feedback window
-  of the test version (section 6) is meant for adults: it can also only be reached through this parental check, unless “18+” was chosen
-  as the answer to “How old are you?” at first launch. Only then does the test version also show a “Give feedback” button that opens
-  the window directly.</p>
+  <p>Fuzzy Meadow is suitable for children. The app does not collect any personal data during play itself, so no data of children is
+  collected either. Purchases and the switch for the ad videos can only be reached through a parents' area protected by a small
+  arithmetic task: parents decide whether ad videos are shown, and they are off after installation. For the videos, Fuzzy Meadow is
+  marked as directed to children at Unity, and the app tells Unity that only non-personalised ads may be shown (section 7). The
+  feedback window of the test version (section 6) is meant for adults: it can also only be reached through this parental check,
+  unless “18+” was chosen as the answer to “How old are you?” at first launch. Only then does the test version also show a
+  “Give feedback” button that opens the window directly.</p>
 
   <h3>5. Buying the full version (in-app purchase)</h3>
   <p>Part of the game can be played for free; the full version can be unlocked with a one-time in-app purchase (no subscription).
-  The purchase is handled entirely by <b>Google Play</b>. Google processes the data required for the purchase (e.g. your Google account
-  and payment details) under its own responsibility. We do not receive any payment details – Google only confirms that the full version
-  was purchased, and this confirmation is stored on your device.</p>
+  Instead of buying, the village stages can also be unlocked one by one with lucky coins from optional ad videos (section 7); the
+  full version shows no ad videos. The purchase is handled entirely by <b>Google Play</b>. Google processes the data required for the
+  purchase (e.g. your Google account and payment details) under its own responsibility. We do not receive any payment details –
+  Google only confirms that the full version was purchased, and this confirmation is stored on your device.</p>
   <p>Technically, the app uses Google's <b>Google Play Billing Library</b> for this. It only talks to the Play Store app on your device
   (this requires the “Google Play Billing” permission); the connection to Google's servers is made by the Play Store itself. The app
-  itself does not go online, not even for a purchase. To restore a full version you already bought, e.g. after reinstalling, the app
+  itself does not go online for a purchase. To restore a full version you already bought, e.g. after reinstalling, the app
   asks the Play Store whether your Google account owns it. No data is sent to us or to any other provider (such as analytics or
-  advertising services).
+  advertising services) when you buy.
   The <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> applies.</p>
 
   <h3 id="feedback-en">6. Feedback in the open test (test version only)</h3>
@@ -289,34 +381,89 @@ footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26
   </ol>
   Without a request, we delete this data according to the periods above, no later than 12 months after the end of the test. Game progress
   and settings are only stored on your device; you delete them yourself by deleting a world on the start screen or by uninstalling the app
-  (section 3). There is no user account that would need to be deleted.</div>
+  (section 3). There is no user account that would need to be deleted.<br>
+  <b>Ad videos:</b> data that Unity receives for the ad videos (section 7) is held by Unity, not by us. You can ask Unity directly to
+  delete it: via the privacy icon in an ad video or by emailing <a href="mailto:DPO@unity3d.com">DPO@unity3d.com</a>. If parents
+  switch the ad videos off in the parents' area, the app no longer loads or shows any videos.</div>
 
-  <h3>7. Google Play Store</h3>
+  <h3 id="ads">7. Optional ad videos (Unity Ads)</h3>
+  <p><b>Note:</b> The ad videos are coming with one of the next updates of the app. Until your device has that update, the app
+  contains neither ads nor the ad software, and no data goes to Unity.</p>
+  <p>In the free version, the village stages can also be unlocked with <b>lucky coins</b> instead of buying, one after the other. Lucky
+  coins are earned by watching short, optional ad videos: 10 coins per video, at most 10 videos a day. Videos are only available if
+  parents allow them in the parents' area (behind the arithmetic task) under “Ad videos”; they are off after installation. A video
+  only plays when “Watch video” is tapped in the game – there are no ads that open by themselves. Once the full version is bought or
+  all village stages are unlocked, there are no more videos. The test version in the open test shows no videos.</p>
+  <p><b>Provider.</b> The videos are delivered by the <b>Unity Ads</b> ad network of Unity Technologies SF, 116 New Montgomery Street,
+  Suite 200, San Francisco, CA 94105, USA (“Unity”), through the ad software included in the app (Unity Ads SDK). We are jointly
+  responsible for collecting the data listed below in the app and transferring it to Unity, because we included the ad software.
+  Unity is solely responsible for everything it does with the data afterwards; Unity's privacy policy linked below applies to this.
+  You can exercise your rights with us or directly with Unity.</p>
+  <p><b>When data goes to Unity.</b> Only after parents allow the ad videos does the app start the ad software and preload a video –
+  right away and then at every game start, as long as a village stage is still locked. At that point and when a video is watched,
+  Unity receives data to deliver, count and bill videos and to prevent fraud. While the videos are off, and once all village stages
+  are unlocked, the app does not start the ad software.</p>
+  <p><b>Non-personalised ads only.</b> Fuzzy Meadow is marked as directed to children at Unity. In addition, before starting the ad
+  software the app tells it that there is no consent to personalised advertising and that only non-personalised ads may be shown.
+  According to Unity, it then only shows contextual ads that are not based on interests or past behaviour. The app cannot read your
+  device's advertising ID because the permission for it has been removed from the app. We have not enabled the “Acquire Optimization”
+  feature, with which Unity Ads would additionally record when and for how long the app is used.</p>
+  <p><b>What data.</b> According to Unity (its privacy policy and its data safety information on Google Play for Unity Ads), this may
+  include:</p>
+  <ul>
+    <li>the IP address and the approximate location derived from it (e.g. country or city),</li>
+    <li>device and installation identifiers assigned by the ad software itself (not the advertising ID),</li>
+    <li>information about the device and app, e.g. device model, operating system, language and app version,</li>
+    <li>interactions with the ads: which videos were shown, whether they were watched to the end and what is tapped in the video,</li>
+    <li>technical diagnostic data of the ad software (e.g. loading times and errors),</li>
+    <li>according to Unity Ads' data safety information, also information about purchases (purchase history).</li>
+  </ul>
+  <p>For users treated as children, Unity says it only uses the IP address (for the approximate location), an installation identifier
+  and a user ID assigned by the developer – we do not assign such a user ID. According to Unity, it may share data with advertising
+  partners, e.g. so that ads can be delivered and billed; details are in Unity's privacy policy. We ourselves do not receive any data
+  about individual people from Unity, only aggregated figures (e.g. how many videos were shown).</p>
+  <p><b>Transfers and retention.</b> Unity processes the data in the USA and in other countries. For transfers to the USA, Unity has
+  agreed to the European Commission's Standard Contractual Clauses (Art. 46(2)(c) GDPR), which are also recognised for transfers from
+  Switzerland (Art. 16(2)(d) FADP). According to Unity, it keeps data about interactions with ads for up to 12 months; further periods
+  are given in Unity's privacy policy.</p>
+  <p><b>Switching off.</b> Parents can switch the ad videos off again in the parents' area at any time. From then on the app no longer
+  loads or shows any videos. Ad software that has already started can technically only be stopped by closing the app; from the next
+  start the app no longer starts it. Lucky coins already collected and unlocked village stages are kept. Via the privacy icon in an ad
+  video you can also view the ad data collected through the device directly at Unity and ask for it to be deleted, or you can email
+  <a href="mailto:DPO@unity3d.com">DPO@unity3d.com</a>.</p>
+  <p><b>Legal basis.</b> The legal basis is the parents' consent, given by allowing the ad videos in the parents' area (Art. 6(1)(a)
+  and Art. 8 GDPR; for users in Germany also Section 25(1) TDDDG); in Switzerland the principles of the FADP apply. Consent can be
+  withdrawn at any time with effect for the future by switching the ad videos off in the parents' area. Unity's privacy information on
+  advertising:
+  <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">unity.com/legal/game-player-and-app-user-privacy-policy</a>.</p>
+
+  <h3>8. Google Play Store</h3>
   <p>When you download the app from Google Play, Google processes data under its own responsibility (e.g. your Google account and
   download information). We have no influence on this. Statistics we see in the Google Play Console are aggregated and do not identify
   individual people.</p>
 
-  <h3>8. Your rights</h3>
+  <h3>9. Your rights</h3>
   <p>Under the Swiss Federal Act on Data Protection (FADP) or – if you live in the EU – the General Data Protection Regulation (GDPR),
   you have the right of access, rectification, erasure, restriction of processing, data portability and objection, and the right to
   lodge a complaint with a data protection supervisory authority (in Switzerland the Federal Data Protection and Information
   Commissioner, FDPIC; in the EU the authority of your country of residence). Apart from feedback you choose to send us (section 6), we do not
-  store any personal data about you. We delete feedback on request (<a href="#delete">how it works</a>); beyond that we usually cannot
-  provide or delete any data – you can delete your game progress at any time yourself. If you have any questions, contact us at the
+  store any personal data about you. Data for the ad videos is held by Unity, not by us (section 7); you can exercise your rights
+  regarding it with us or directly with Unity. We delete feedback on request (<a href="#delete">how it works</a>); beyond that we usually
+  cannot provide or delete any data – you can delete your game progress at any time yourself. If you have any questions, contact us at the
   email address above.</p>
 
-  <h3 id="website">9. This website</h3>
+  <h3 id="website">10. This website</h3>
   <p>This privacy policy is hosted on GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA).
   When you open it, GitHub processes technically necessary data such as your IP address to deliver the page and protect it from
   attacks. The page itself uses no cookies, no scripts and no embedded third-party content. GitHub's privacy policy:
   <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
 
-  <h3>10. Changes</h3>
+  <h3>11. Changes</h3>
   <p>If the app changes in a way that affects how data is processed, we will update this privacy policy. The version published here
   applies.</p>
 </section>
 
-<footer>Fuzzy Meadow · <a href="#de">Datenschutz</a> · <a href="#en">Privacy</a> · <a href="#loeschen">Daten löschen</a> · <a href="#delete">Delete data</a></footer>
+<footer>Fuzzy Meadow · <a href="#de">Datenschutz</a> · <a href="#en">Privacy</a> · <a href="#werbung">Werbevideos</a> · <a href="#ads">Ad videos</a> · <a href="#loeschen">Daten löschen</a> · <a href="#delete">Delete data</a></footer>
 </main>
 </body>
 </html>
