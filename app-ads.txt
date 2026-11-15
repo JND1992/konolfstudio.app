@@ -234,3 +234,6 @@ videoheroes.tv, 212550, RESELLER, 064bc410192443d8
 xandr.com, 13923, RESELLER
 xandr.com, 16856, RESELLER
 zmaticoo.com, 5135703, RESELLER
+
+# Google AdMob (Little Farmstand, Google Play: app.konolfstudio.littlefarmstand) - publisher ID from AdMob, added 15.11.2026
+google.com, pub-4713126341038810, DIRECT, f08c47fec0942fa0
