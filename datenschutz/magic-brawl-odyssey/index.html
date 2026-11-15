@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <!--
   Datenschutzerklärung Magic Brawl Odyssey (am 05.10.2026 kurz "Arkambo", davor "Magic Run & Fight"; Name unter dem
-  Android-Symbol "Brawl Odyssey"), Fassung 10 (Stand 14.11.2026, veröffentlicht 14.11.2026, Jan: "passe die
+  Android-Symbol "Brawl Odyssey"), Fassung 11 (Stand 15.11.2026, veröffentlicht 15.11.2026 vor dem Store-Update
+  1.0.18 (19), dem ersten Build mit Play Games; Entwurf vom 14.11.2026, Jan 14.11.2026 zu den Play-Games-Erfolgen:
+  "Ja, automatische Anmeldung", am 15.11.2026: "passe die Datenschutzerklärung an und veröffentliche die neue
+  version" - Spiel-Repo: Plugin zurück f64a33b, PlayGamesAccount meldet beim Start automatisch an, PlayAchievements
+  meldet die erreichten Orden-Stufen als Erfolge, lokal nur ein FNV-Hash der Spieler-ID; Play-Games-Projekt
+  449406090225, 089a877): neuer Unterabschnitt 2 "Erfolge über Google Play Games" (#play-games), Einleitung,
+  Abschnitte 4, 8 und 11, Änderungsliste, englische Fassung,
+  Fassung 10 (Stand 14.11.2026, veröffentlicht 14.11.2026, Jan: "passe die
   Datenschutzerklärung an", dann "Ja, veröffentlichen"):
   Abschnitt 2 ohne den Tag des Probe-Helds (Spiel-Repo 2834241: Probe-Held entfernt, gesperrte Helden nur noch auf dem
   Trainingsplatz, der nichts speichert; TryoutDay.<Held> fällt weg, PackOfferDay bleibt; kein veröffentlichter Build
@@ -126,14 +133,16 @@
 <main>
 
 <h1>Datenschutzerklärung für die App „Magic Brawl Odyssey“</h1>
-<p class="meta">Fassung 10 · Stand: 14. November 2026 · <a href="#english">English version below</a></p>
+<p class="meta">Fassung 11 · Stand: 15. November 2026 · <a href="#english">English version below</a></p>
 
 <p>
   Diese Erklärung beschreibt, welche Daten die Android-App „Magic Brawl Odyssey“ (früher „Arkambo“ bzw.
   „Magic Run &amp; Fight“) verarbeitet, wofür und
   welche Rechte du hast. Kurz gesagt: Das Solo-Spiel funktioniert offline. Bei jedem Start fragt die App bei Google
-  Play die Preise und deine Käufe ab (<a href="#kaeufe">Abschnitt 6</a>) und, wenn du sie aus Google Play installiert
-  hast, ob es eine neuere Version gibt (<a href="#google-play">Abschnitt 2</a>). Weitere Daten gehen über das Internet, wenn
+  Play die Preise und deine Käufe ab (<a href="#kaeufe">Abschnitt 6</a>), meldet dich bei Google Play Games an, wenn
+  du dort ein Profil hast, damit deine Orden als Erfolge zählen (<a href="#play-games">Abschnitt 2</a>), und fragt,
+  wenn du sie aus Google Play installiert hast, ob es eine neuere Version gibt (<a href="#google-play">Abschnitt 2</a>).
+  Weitere Daten gehen über das Internet, wenn
   du den Online-Koop nutzt oder dein Online-Konto löschst (<a href="#online-koop">Abschnitt 3</a>,
   <a href="#loeschung">Abschnitt 11</a>), etwas kaufst (<a href="#kaeufe">Abschnitt 6</a>), im offenen Test das
   Feedback-Formular abschickst (<a href="#feedback-formular">Abschnitt 1</a>) oder freiwillig
@@ -273,6 +282,8 @@
     (siehe <a href="#google-play">unten</a>), im offenen Test auch, wie oft die Karte zum Feedback erschienen ist; ab
     der App-Version nach 1.0.14 auch, an welchem Tag dir die App zuletzt nach Welt 1 das Angebot zum Abenteuer-Paket
     gezeigt hat,</li>
+  <li>ab der App-Version nach 1.0.17, welche Orden-Stufen die App schon als Erfolge an Google Play Games gemeldet hat,
+    mit einem Hash-Wert deiner Play-Games-Spieler-ID (siehe <a href="#play-games">unten</a>),</li>
   <li>gespeicherte Koop-Räume: als Gastgeber deine Räume mit den Namen der Mitglieder und einem Hash-Wert ihrer
     Online-ID, als Mitglied eine Kopie (siehe <a href="#raeume">Abschnitt 3 h</a>),</li>
   <li>für den Online-Koop: deine Online-ID, das Anmelde-Token von Unity, eine zufällige
@@ -317,6 +328,45 @@
   Sterne, Text, Gerät und App-Version), und kann darauf antworten. Rechtsgrundlage ist mein berechtigtes Interesse,
   dass alle mit einer aktuellen, im Koop zueinander passenden Version spielen und das Spiel bewerten können
   (Art. 6 Abs. 1 lit. f DSGVO).
+</p>
+
+<h3 id="play-games">Erfolge über Google Play Games</h3>
+<p>
+  Ab der App-Version nach 1.0.17 zählen deine Orden auch als Erfolge in Google Play Games: je Orden und Stufe
+  (Bronze, Silber, Gold) ein Erfolg. Für Google Play Games ist Google verantwortlich (Google Ireland Limited, siehe
+  oben); Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
+</p>
+<ul>
+  <li><strong>Anmeldung:</strong> Bei jedem Start meldet Google Play Games dich in der App automatisch an, wenn du auf
+    dem Gerät ein Play-Games-Profil hast und die automatische Anmeldung für Spiele nicht ausgeschaltet ist; Google
+    zeigt dabei kurz einen eigenen Hinweis. Klappt das nicht, kannst du dich unter
+    <span class="path">Einstellungen › Online &amp; Info › Play-Games-Erfolge › „Anmelden“</span> über den Dialog von
+    Google anmelden. Ohne Internet passiert nichts. Ich erhalte weder deine E-Mail-Adresse noch dein Passwort.</li>
+  <li><strong>Was die App erhält und speichert:</strong> Von Google erhält die App deine Play-Games-Spieler-ID. Sie
+    speichert davon nur einen Hash-Wert auf deinem Gerät, um sich zu merken, welche Orden-Stufen für welches Profil
+    schon gemeldet sind (meldet sich auf dem Gerät ein anderes Profil an, meldet sie dafür neu). Die ID selbst
+    speichert sie nicht und sendet sie nirgendwohin; ich erhalte sie nicht.</li>
+  <li><strong>Was Google erhält:</strong> dass du das Spiel mit deinem Play-Games-Profil spielst und welche Erfolge du
+    wann freigeschaltet hast – auch für Orden-Stufen, die du schon vorher erreicht hattest. Das Play-Games-SDK von
+    Google erhebt nach Angaben von Google ausserdem Analyse- und Diagnosedaten, um das SDK stabil zu halten und zu
+    verbessern. Weitere Spieldaten (Fortschritt, Münzen, Käufe, Spielername) sendet die App nicht an Google Play
+    Games.</li>
+  <li><strong>Wer deine Erfolge sieht:</strong> Das stellst du in deinem Play-Games-Profil bei Google ein (für alle,
+    nur für Freunde oder nur für dich). „Anzeigen“ in derselben Zeile öffnet die Liste der Erfolge von Google. Auf
+    dein Play-Games-Profil habe ich keinen Zugriff; in der Google Play Console sehe ich höchstens zusammengefasste
+    Zahlen, so wie Google sie dort anzeigt. Setzt du die Orden in der App zurück, bleiben die freigeschalteten
+    Erfolge in deinem Profil.</li>
+  <li><strong>Abmelden und löschen:</strong> In den Einstellungen von Google Play Games wählst du, mit welchem Konto
+    Spiele dich automatisch anmelden, oder meldest dich von allen Spielen ab (Hilfe von Google:
+    <a href="https://support.google.com/googleplay/answer/3129346">support.google.com/googleplay/answer/3129346</a>).
+    Die Play-Games-Daten dieses Spiels oder dein ganzes Play-Games-Profil löschst du bei Google über dein
+    <a href="https://play.google.com/games/profile">Play-Games-Profil</a> oder
+    <a href="https://myaccount.google.com">myaccount.google.com</a>.</li>
+</ul>
+<p>
+  Rechtsgrundlage ist mein berechtigtes Interesse, deine Orden dort als Erfolge anzubieten, wo du mit Google Play
+  Games deine Spiele-Erfolge sammelst, mit der Anmeldung, wie Google sie für Spiele vorsieht (Art. 6 Abs. 1 lit. f
+  DSGVO); meldest du dich selbst über „Anmelden“ an, die von dir gewünschte Funktion (Art. 6 Abs. 1 lit. b DSGVO).
 </p>
 
 <h2 id="online-koop">3. Online-Koop (Unity Gaming Services)</h2>
@@ -470,7 +520,9 @@
   Online-Koop (<a href="#online-koop">Abschnitt 3</a>) und beim Löschen deines Online-Kontos
   (<a href="#loeschung">Abschnitt 11</a>), die Kauf-Software Unity IAP bei Käufen, im Online-Koop und beim Löschen
   des Online-Kontos (<a href="#kaufmeldungen">Abschnitt 6</a>) und die Werbe-Software von LevelPlay und Unity Ads,
-  nachdem du Werbeclips erlaubt hast (<a href="#werbung">Abschnitt 7</a>).
+  nachdem du Werbeclips erlaubt hast (<a href="#werbung">Abschnitt 7</a>). Ab der App-Version nach 1.0.17 kommt das
+  Play-Games-SDK von Google dazu, das bei jedem Start Analyse- und Diagnosedaten an Google senden kann
+  (<a href="#play-games">Abschnitt 2</a>).
 </p>
 <p>
   Wenn du in den Android-Einstellungen das Senden von
@@ -638,8 +690,9 @@
 <h2 id="cloud">8. Fortschritt sichern (Google Play Games und Unity Cloud Save) – noch nicht verfügbar</h2>
 <p>
   <strong>Noch nicht verfügbar – wird erst mit einem späteren Update angeboten.</strong> Die aktuelle Version der App
-  enthält diese Funktion nicht: Sie meldet dich nicht bei Google Play Games an und sendet keine Daten an Unity
-  Cloud Save. Die folgende Beschreibung gilt erst ab dem Update, das die Funktion bringt.
+  enthält diese Funktion nicht: Sie sendet keine Daten an Unity Cloud Save und verknüpft dein Online-Konto nicht mit
+  Google Play Games (die Anmeldung bei Google Play Games für die Erfolge beschreibt
+  <a href="#play-games">Abschnitt 2</a>). Die folgende Beschreibung gilt erst ab dem Update, das die Funktion bringt.
 </p>
 <p>
   Unter <span class="path">Einstellungen › Online &amp; Info › „Mit Google sichern“</span> kannst du deinen
@@ -726,7 +779,8 @@
 </ul>
 <p>
   Da dein Online-Konto weder mit deinem Namen noch mit deiner E-Mail-Adresse verknüpft ist, kann ich Anfragen nur
-  über deine Online-ID einem Online-Konto zuordnen. Bitte nenne sie deshalb in jeder Anfrage.
+  über deine Online-ID einem Online-Konto zuordnen. Bitte nenne sie deshalb in jeder Anfrage. Deine Erfolge in
+  Google Play Games verwaltest und löschst du bei Google (<a href="#play-games">Abschnitt 2</a>).
 </p>
 
 <h3 id="loeschung">Online-Konto löschen</h3>
@@ -774,6 +828,13 @@
   auf dieser Seite veröffentlichte Fassung. Bei wesentlichen Änderungen am Online-Koop zeigt die App den Hinweis zum
   Online-Koop erneut an.
 </p>
+<p class="small">Fassung 11 vom 15. November 2026. Neu gegenüber Fassung 10:</p>
+<ul class="small">
+  <li>Einleitung, Abschnitte 2, 4, 8 und 11: Ab der App-Version nach 1.0.17 zählen deine Orden auch als Erfolge in
+    Google Play Games. Die App meldet dich dafür bei jedem Start bei Google Play Games an, wenn du dort ein Profil hast,
+    und speichert auf dem Gerät nur einen Hash-Wert deiner Play-Games-Spieler-ID; das Play-Games-SDK von Google sendet
+    Analyse- und Diagnosedaten an Google.</li>
+</ul>
 <p class="small">Fassung 10 vom 14. November 2026. Neu gegenüber Fassung 9:</p>
 <ul class="small">
   <li>Abschnitt 2: Die App merkt sich nicht mehr, an welchem Tag du welchen Helden zuletzt ausprobiert hast. Gesperrte
@@ -886,14 +947,16 @@
     or choose “Per E-Mail” to open your mail app with your text. Legal basis: Art. 6(1)(f) GDPR (my legitimate interest
     in finding bugs and improving the app), for the promised code Art. 6(1)(b) GDPR.</li>
   <li><strong>Offline by default:</strong> solo play works without internet; no chat. On every start the app asks
-    Google Play for prices and your purchases and, if installed from Google Play, whether a newer version exists
-    (see “Updates and ratings”). Other data goes over the internet only when you use online co-op or
+    Google Play for prices and your purchases, signs you in to Google Play Games if you have a Play Games profile
+    (from the app version after 1.0.17, see “Google Play Games achievements”) and, if installed from Google Play, asks
+    whether a newer version exists (see “Updates and ratings”). Other data goes over the internet only when you use online co-op or
     delete your online account, buy something, send the open test's feedback form or allow ad clips (then on every game start). Progress (incl.
     orders/awards), coins, purchases, your chosen name, settings, your answers to the ad questions (under 16 or not,
     clips yes/no, personalised yes/no), local leaderboards (the co-op leaderboard also holds
     co-players' names), the co-op error log, which milestones you reached and when the app last asked for Google's
     rating dialog, from the app version after 1.0.14 also on which day the app last showed you the Adventure Pack offer
-    after world 1, your Online ID, Unity's session token, a random installation ID and a random device ID are stored
+    after world 1, from the app version after 1.0.17 which award tiers it already reported to Google Play Games with a
+    hash of your Play Games player ID, your Online ID, Unity's session token, a random installation ID and a random device ID are stored
     on your device.</li>
   <li><strong>Updates and ratings via Google Play</strong> (only if installed from Google Play; Google Ireland Limited
     is responsible, the app only asks the Play Store app on your device): <em>In-App Updates</em> – the app asks
@@ -906,6 +969,22 @@
     learns whether or how you rated. Never in co-op, never in the open test. “Spiel bewerten” in the settings only opens
     the store page. In the Play Console I see ratings as Google shows them (e.g. profile name, stars, text, device, app
     version) and can reply. Legal basis Art. 6(1)(f) GDPR.</li>
+  <li><strong>Google Play Games achievements</strong> (from the app version after 1.0.17; Google Ireland Limited is
+    responsible for Google Play Games): your awards (Orden) also count as Play Games achievements, one per award and
+    tier. On every start Google Play Games signs you in automatically if you have a Play Games profile on the device and
+    automatic sign-in for games is not switched off; otherwise “Anmelden” under
+    <span class="path">Einstellungen › Online &amp; Info › Play-Games-Erfolge</span> opens Google's sign-in. The app
+    receives your Play Games player ID and stores only a hash of it on the device (to remember which tiers were
+    reported for which profile); it sends the ID nowhere and I never receive it. Google receives that you play the
+    game with your profile and which achievements you unlocked when (also for tiers reached earlier); according to
+    Google, its Play Games SDK also collects analytics and diagnostic data. No other game data goes to Google Play
+    Games. Who sees your achievements is set in your Play Games profile (everyone, friends, only you); I have no access
+    to your profile and see at most aggregated numbers in the Play Console; unlocked achievements stay even if you reset
+    the awards in the app. Choose the account for automatic sign-in or sign out of all games in the Play Games
+    settings; delete this game's Play Games data or your whole profile via your
+    <a href="https://play.google.com/games/profile">Play Games profile</a> or myaccount.google.com. Legal basis
+    Art. 6(1)(f) GDPR (offering your awards as achievements where you collect them with Google Play Games), for a
+    sign-in you start yourself Art. 6(1)(b) GDPR.</li>
   <li><strong>Online co-op (optional, never with ads):</strong> uses Unity Gaming Services (Unity Technologies SF, USA,
     as my processor): <em>Authentication</em> creates a random player ID (Online ID), not linked to your name, e-mail
     or Google account – but if you buy something after using co-op since the app was started, Unity receives it with
@@ -964,8 +1043,8 @@
     the privacy icon in a clip you can see and request deletion of your ad data; you can also reset or delete the
     advertising ID in Android settings.</li>
   <li><strong>Optional progress backup – not yet available, coming with a later update:</strong> the current version
-    of the app does not include it: it does not sign you in with Google Play Games and sends nothing to Unity Cloud
-    Save. Once available, “Mit Google sichern”
+    of the app does not include it: it sends nothing to Unity Cloud Save and does not link your online account to
+    Google Play Games (the Play Games sign-in for achievements is described above). Once available, “Mit Google sichern”
     will sign you in with Google Play Games, link your
     Online ID to your Play Games player ID and store owned content, coins, your adventures incl. gear and best times,
     the enemy compass, your orders (award counters per device, reached tiers) and your saved co-op rooms or copies
@@ -974,10 +1053,11 @@
   <li><strong>Crash and diagnostic data:</strong> the game's own code sends no crash or diagnostic reports, and Unity
     Diagnostics is switched off. The SDKs may send technical, diagnostic and crash data when you use the feature:
     Unity services in co-op and when deleting your online account, Unity IAP for purchases, in co-op and when deleting
-    your online account, LevelPlay/Unity Ads after you allow ad clips (see above). Google
+    your online account, LevelPlay/Unity Ads after you allow ad clips (see above), from the app version after 1.0.17
+    Google's Play Games SDK on every start. Google
     Play provides aggregated Android vitals if you allowed this on your device.</li>
   <li><strong>Legal bases:</strong> Art. 6(1)(b) GDPR (features you request, purchases, e-mails about them, open-test promo codes), Art. 6(1)(a) GDPR
-    (ad clips and personalised ads), Art. 6(1)(c) GDPR (accounting records, requests about your rights), Art. 6(1)(f) GDPR (security, purchase reports by Unity IAP, update checks and the rating dialog, answering other e-mails, the open test's feedback form). Transfers to the USA rely on Standard Contractual Clauses (Unity) and the EU-US / Swiss-US
+    (ad clips and personalised ads), Art. 6(1)(c) GDPR (accounting records, requests about your rights), Art. 6(1)(f) GDPR (security, purchase reports by Unity IAP, update checks and the rating dialog, the automatic Play Games sign-in, answering other e-mails, the open test's feedback form). Transfers to the USA rely on Standard Contractual Clauses (Unity) and the EU-US / Swiss-US
     Data Privacy Framework (Google, Cloudflare, Microsoft, GitHub). For ads, Unity may also process data in Israel
     (ironSource), which the EU and Switzerland recognise as providing adequate protection.</li>
   <li><strong>Children:</strong> the app is not directed at children under 13. No ad clips under 16 (see above). If a
@@ -987,11 +1067,16 @@
     consent and a complaint to a supervisory authority (Switzerland: FDPIC / EDÖB). Delete your online account in the
     app under <span class="path">Einstellungen › Online &amp; Info › Online-Konto löschen</span>
     (Settings › Online &amp; Info › Delete online account), or e-mail me with your Online ID. (Once the progress
-    backup exists, the backup is deleted with the account.) For the purchase reports
+    backup exists, the backup is deleted with the account.) Play Games achievements are managed and deleted at
+    Google (see above). For the purchase reports
     to Unity, send me the order number (GPA.…) and I will forward your request to Unity.</li>
   <li><strong>This page</strong> is hosted on GitHub Pages (GitHub, Inc., USA), which processes your IP address to
     deliver it. No cookies, no scripts.</li>
 </ul>
+<p class="small">Version 11 of 15 November 2026 (new: from the app version after 1.0.17 your awards also count as
+  Google Play Games achievements; the app signs you in to Google Play Games on every start if you have a profile there
+  and stores only a hash of your Play Games player ID on the device; Google's Play Games SDK sends analytics and
+  diagnostic data to Google).</p>
 <p class="small">Version 10 of 14 November 2026 (new: the app no longer remembers on which day you last tried each
   hero; locked heroes are now tried on the training ground, which stores nothing).</p>
 <p class="small">Version 9 of 13 November 2026 (new: from the app version after 1.0.14 a co-op room plays the host's
