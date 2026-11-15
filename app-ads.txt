@@ -1,6 +1,9 @@
 # app-ads.txt for konolfstudio.app - developer website of Magic Brawl Odyssey (Google Play: com.magicbrawlodyssey.game)
+# and Fuzzy Meadow (Google Play: app.konolfstudio.fuzzymeadow), both in the same Unity organization.
 # Authorized sellers for Unity Ads / Unity LevelPlay, copied from the Unity Dashboard
-# (Setup > Organization settings > App-ads.txt, "Show full list") on 11.10.2026. Refresh it from there when Unity updates the list.
+# (Setup > Organization settings > App-ads.txt, "Show full list") on 11.10.2026; the last three lines of this block were
+# added on 15.11.2026 because the dashboard (Monetization > Settings > Organization > App-ads.txt) reported them missing.
+# Refresh it from there when Unity updates the list.
 OWNERDOMAIN=konolfstudio.app
 appnexus.com, 6849, RESELLER
 appnexus.com, 11826, RESELLER, f5ab79cb980f11d1
@@ -163,6 +166,9 @@ loopme.com, 20775, RESELLER, 6c8d5f95897a5a3b
 loopme.com, 2896, RESELLER, 6c8d5f95897a5a3b
 loopme.com, 9621, RESELLER, 6c8d5f95897a5a3b
 stroeer.com, 17379, RESELLER
+monetrix.ai, 10761, RESELLER
+playdigo.com, 1965, RESELLER
+start.io, 131192070, RESELLER
 
 # ironSource Ads (the network inside Unity LevelPlay): the direct line with the ironSource Publisher ID and the
 # "ironSource authorized resellers" from docs.unity.com/en-us/grow/programmatic/ironsource-exchange/app-ads-txt (11.10.2026;
