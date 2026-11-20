@@ -20,6 +20,12 @@ datenschutz/
 lizenzen/
   magic-brawl-odyssey/
     index.html                     Open-Source-Lizenzen „Magic Brawl Odyssey“ (erzeugt, nicht von Hand ändern)
+presskit/
+  magic-brawl-odyssey/
+    index.html                     Presskit Englisch (von Hand)
+    de/index.html                  Presskit Deutsch (von Hand)
+    img/                           Bilder der Seiten (erzeugt)
+    magic-brawl-odyssey-presskit.zip  Download für die Presse (erzeugt)
 .nojekyll                          GitHub Pages liefert die Dateien unverändert aus
 ```
 
@@ -52,6 +58,22 @@ Jede App bekommt unter `datenschutz/` einen eigenen Ordner mit einer `index.html
   ```
   Danach beide Repos committen. Nötig nach jedem SDK- oder Paket-Update (Release-Checkliste des Spiels, Punkt 3.8).
 - Keine Skripte, keine Cookies; große Lizenztexte sind eingeklappt (`<details>`), alles andere ist sichtbar.
+
+### Presskit (Magic Brawl Odyssey)
+
+- Adressen: https://konolfstudio.app/presskit/magic-brawl-odyssey/ (Englisch) und `.../de/` (Deutsch). Verlinkt von
+  `index.html`. Angelegt 20.11.2026 für Presse-Mails.
+- Die beiden HTML-Seiten sind von Hand geschrieben. Bilder (`img/`) und ZIP erzeugt das Skript
+  `Tools/Store/presskit.py` im Spielprojekt aus den Store-Grafiken (echte Screenshots ohne Beschriftung, Titelbild,
+  Logo, App-Symbol, 15 Helden):
+  ```
+  python Tools/Store/presskit.py
+  ```
+  Danach die Seiten prüfen, wenn sich Dateinamen geändert haben, und beide Repos committen.
+- Fakten nur aus dem Store-Text (`Docs/Store/Listing/en-US.txt` / `de-DE.txt`). Preis-Zeile (Startpreis 2,99 € bis
+  31.12.2026) nach dem 31.12.2026 anpassen.
+- Keine Skripte, keine Cookies, nichts von anderen Seiten geladen: Trailer und Demo sind nur verlinkt (YouTube, itch.io),
+  nicht eingebettet. Der Google-Play-Link trägt `utm_source=presskit`.
 
 ## Fuzzy Meadow
 
