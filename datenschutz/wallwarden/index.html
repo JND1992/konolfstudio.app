@@ -1,0 +1,221 @@
+<!doctype html>
+<!--
+  Datenschutzerklärung Wallwarden, Fassung 1 (Stand 22.11.2026): geschlossener Test über Google Play.
+  Code-Stand 0.22.0 (25): Spielstand nur lokal, keine Fremd-SDKs, keine Internet-Adressen, keine Analyse.
+  Werbung (TestAdService), Käufe (TestStoreService) und Einwilligung (TestConsentService) sind nur simuliert:
+  kein Werbenetzwerk, kein Google Play Billing, es wird nichts gesendet oder abgebucht.
+  Von Claude nach dem Code-Stand entworfen (keine Rechtsberatung), Angaben zum Verantwortlichen wie bei den anderen Apps.
+  Veröffentlicht unter https://konolfstudio.app/datenschutz/wallwarden/
+  (Repo JND1992/konolfstudio.app, Datei datenschutz/wallwarden/index.html).
+  VOR dem Einbau von LevelPlay/AdMob, Googles Einwilligungsformular (UMP) oder Unity IAP / Google Play Billing neu fassen.
+-->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wallwarden Datenschutz</title>
+<meta name="description" content="Datenschutzerklärung der App Wallwarden / Privacy policy of the Wallwarden app">
+<style>
+:root {
+  --bg: #eef0f2; --paper: #ffffff; --ink: #2b3036; --soft: #5f6872; --line: #d9dde2; --accent: #8a5a2b; --chip: #e4e7eb;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #16191c; --paper: #1f2327; --ink: #e9ecef; --soft: #a7b0b9; --line: #343a40; --accent: #e0a66a; --chip: #2a2f34; }
+}
+:root[data-theme="dark"] { --bg: #16191c; --paper: #1f2327; --ink: #e9ecef; --soft: #a7b0b9; --line: #343a40; --accent: #e0a66a; --chip: #2a2f34; }
+* { box-sizing: border-box; }
+html { scroll-padding-top: 16px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 "Segoe UI", system-ui, -apple-system, sans-serif; }
+main { max-width: 820px; margin: 0 auto; padding: 28px 16px 64px; }
+header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+h1 { margin: 0; font-size: 30px; }
+nav a { display: inline-block; margin-left: 6px; padding: 6px 14px; border-radius: 999px; background: var(--chip); color: var(--ink); text-decoration: none; font-weight: 600; }
+nav a:hover { color: var(--accent); }
+section { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 24px 26px; margin-top: 18px; }
+h2 { font-size: 24px; margin: 0 0 6px; }
+h3 { font-size: 18px; margin: 22px 0 6px; }
+.lead { color: var(--soft); margin-top: 0; }
+.box { background: var(--chip); border-radius: 12px; padding: 12px 16px; margin: 12px 0; }
+.box ul { margin: 8px 0; padding-left: 22px; }
+.box:target { outline: 2px solid var(--accent); outline-offset: 2px; }
+a { color: var(--accent); }
+footer { color: var(--soft); font-size: 14px; text-align: center; margin-top: 26px; }
+@media (max-width: 600px) { section { padding: 18px 16px; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Wallwarden</h1>
+  <nav aria-label="Sprache / Language"><a href="#de">Deutsch</a><a href="#en">English</a></nav>
+</header>
+
+<!-- ======================================================= DEUTSCH -->
+<section id="de" lang="de">
+  <h2>Datenschutzerklärung</h2>
+  <p class="lead">für die App „Wallwarden“ (Android) · Stand: 22. November 2026</p>
+
+  <div class="box"><b>Kurz gesagt:</b> Wallwarden läuft offline. Die App sendet keine Daten, hat kein Tracking und keine
+  Analyse-Werkzeuge, und wir betreiben keinen eigenen Server. Dein Spielstand liegt nur auf deinem Gerät. In der aktuellen
+  Testfassung sind Werbung und Käufe nur <b>simuliert</b>: Es wird keine echte Werbung geladen und nichts abgebucht.</div>
+
+  <h3>1. Verantwortlicher</h3>
+  <p>Jan-Niklas Dohm<br>
+  Unterdorfstrasse 11<br>
+  3510 Konolfingen (BE)<br>
+  Schweiz<br>
+  E-Mail: <a href="mailto:support@konolfstudio.app">support@konolfstudio.app</a></p>
+
+  <h3>2. Was die App nicht tut</h3>
+  <p>Die App übermittelt <b>keine personenbezogenen Daten</b>, weder an uns noch an Dritte. Insbesondere gibt es:</p>
+  <ul>
+    <li>keine Registrierung und kein Benutzerkonto,</li>
+    <li>keine echte Werbung, keine Werbenetzwerke und keine Werbe-IDs,</li>
+    <li>keine echten In-App-Käufe (die Kauf-Knöpfe zeigen in dieser Testfassung nur einen Test-Kauf ohne Geld),</li>
+    <li>keine Analyse-, Statistik- oder Tracking-Dienste,</li>
+    <li>keinen Zugriff auf Standort, Kontakte, Kamera, Mikrofon, Fotos oder andere Dateien,</li>
+    <li>keine Mehrspieler-, Chat- oder Teilen-Funktionen.</li>
+  </ul>
+  <p>Die App nutzt nur die Vibration deines Geräts (abschaltbar in den Einstellungen des Spiels).</p>
+
+  <h3>3. Spielstand und Einstellungen auf deinem Gerät</h3>
+  <p>Damit du weiterspielen kannst, speichert die App deinen Fortschritt (z.&nbsp;B. geschaffte Level, Gold, Diamanten, gekaufte
+  Ausrüstung, Bauten) und deine Einstellungen (z.&nbsp;B. Ton, Sprache, Steuerung) lokal auf deinem Gerät. Wir haben darauf keinen
+  Zugriff. Beim Deinstallieren der App oder über „Daten löschen“ in den App-Einstellungen von Android werden sie gelöscht.</p>
+  <p>Wenn auf deinem Gerät die automatische Android-Sicherung eingeschaltet ist, kann Android diese App-Daten in deinem Google-Konto
+  sichern und bei einer Neuinstallation wiederherstellen. Diese Sicherung führt Google bzw. Android durch, nicht wir; du kannst sie in
+  den Einstellungen deines Geräts abschalten.</p>
+
+  <h3>4. Test über Google Play</h3>
+  <p>Wallwarden wird zunächst in einem geschlossenen Test über Google Play verteilt. Google Play lädt Tester über ihre E-Mail-Adresse
+  bzw. ihr Google-Konto ein; diese Liste wird in der Google Play Console verwaltet. Wir verwenden diese Adressen nur, um den Test
+  durchzuführen, und nicht für Werbung. Schreibst du uns Feedback per E-Mail oder über die Feedback-Funktion von Google Play,
+  verarbeiten wir deine E-Mail-Adresse bzw. deinen Namen und den Inhalt deiner Nachricht, um das Spiel zu verbessern und dir zu
+  antworten (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an der Verbesserung der App; in der Schweiz die
+  Grundsätze des DSG).</p>
+
+  <div class="box" id="loeschen"><b>Daten löschen – so geht’s:</b>
+  <ul>
+    <li><b>Spielstand auf dem Gerät:</b> App deinstallieren oder in den Android-Einstellungen bei Wallwarden „Daten löschen“ wählen.</li>
+    <li><b>Nachrichten an uns und Testerliste:</b> Schreib eine E-Mail an
+    <a href="mailto:support@konolfstudio.app?subject=L%C3%B6schen%20Wallwarden">support@konolfstudio.app</a> mit dem Betreff
+    „Löschen Wallwarden“ und nenne die E-Mail-Adresse, mit der du am Test teilnimmst oder von der du uns geschrieben hast. Wir löschen
+    innerhalb eines Monats deine Nachrichten an uns, nehmen dich auf Wunsch von der Testerliste und bestätigen dir das per E-Mail.
+    Ohne Anfrage löschen wir Feedback-E-Mails, sobald wir sie nicht mehr brauchen, spätestens 12 Monate nach dem Ende des Tests.</li>
+  </ul>
+  Ein Benutzerkonto bei uns, das gelöscht werden müsste, gibt es nicht.</div>
+
+  <h3>5. Google Play Store</h3>
+  <p>Wenn du die App über Google Play herunterlädst, verarbeitet Google dabei Daten in eigener Verantwortung (z.&nbsp;B. dein
+  Google-Konto und Download-Informationen). Darauf haben wir keinen Einfluss. Statistiken, die wir in der Google Play Console sehen,
+  sind zusammengefasst und lassen keinen Rückschluss auf einzelne Personen zu. Es gilt die
+  <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>.</p>
+
+  <h3>6. Kinder</h3>
+  <p>Wallwarden richtet sich an Spieler ab 13 Jahren. Wir erheben keine Daten von Kindern. Kinder sollen uns nicht ohne ihre Eltern
+  schreiben. Erfahren wir, dass uns ein Kind personenbezogene Daten geschickt hat, löschen wir sie.</p>
+
+  <h3>7. Deine Rechte</h3>
+  <p>Du hast nach dem Schweizer Datenschutzgesetz (DSG) bzw. – wenn du in der EU wohnst – nach der Datenschutz-Grundverordnung
+  (DSGVO) das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch
+  sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (in der Schweiz beim Eidgenössischen
+  Datenschutz- und Öffentlichkeitsbeauftragten, EDÖB; in der EU bei der Aufsichtsbehörde deines Wohnlandes). Außer Nachrichten, die du
+  uns selbst schickst (Abschnitt 4), speichern wir keine personenbezogenen Daten über dich. Bei Fragen erreichst du uns unter der oben
+  genannten E-Mail-Adresse.</p>
+
+  <h3 id="webseite">8. Diese Webseite</h3>
+  <p>Diese Datenschutzerklärung wird über GitHub Pages bereitgestellt (GitHub, Inc., 88 Colin P. Kelly Jr. Street,
+  San Francisco, CA 94107, USA). Beim Aufruf verarbeitet GitHub technisch notwendige Daten wie deine IP-Adresse,
+  um die Seite auszuliefern und vor Angriffen zu schützen. Die Seite selbst verwendet keine Cookies, keine Skripte
+  und keine eingebundenen Inhalte Dritter. Datenschutzerklärung von GitHub:
+  <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
+
+  <h3>9. Änderungen</h3>
+  <p>Wenn sich die App so ändert, dass Daten anders verarbeitet werden (zum Beispiel durch echte Werbung oder echte Käufe über
+  Google Play), passen wir diese Datenschutzerklärung vorher an. Es gilt die jeweils hier veröffentlichte Fassung.</p>
+</section>
+
+<!-- ======================================================= ENGLISH -->
+<section id="en" lang="en">
+  <h2>Privacy Policy</h2>
+  <p class="lead">for the app “Wallwarden” (Android) · Last updated: 22 November 2026</p>
+
+  <div class="box"><b>In short:</b> Wallwarden runs offline. The app sends no data, has no tracking and no analytics, and we do
+  not run any server of our own. Your game progress is stored on your device only. In the current test version, ads and purchases
+  are only <b>simulated</b>: no real ads are loaded and nothing is charged.</div>
+
+  <h3>1. Controller</h3>
+  <p>Jan-Niklas Dohm<br>
+  Unterdorfstrasse 11<br>
+  3510 Konolfingen (BE)<br>
+  Switzerland<br>
+  Email: <a href="mailto:support@konolfstudio.app">support@konolfstudio.app</a></p>
+
+  <h3>2. What the app does not do</h3>
+  <p>The app does <b>not transmit any personal data</b>, neither to us nor to third parties. In particular there is:</p>
+  <ul>
+    <li>no registration and no user account,</li>
+    <li>no real advertising, no ad networks and no advertising IDs,</li>
+    <li>no real in-app purchases (in this test version the purchase buttons only show a test purchase without money),</li>
+    <li>no analytics, statistics or tracking services,</li>
+    <li>no access to location, contacts, camera, microphone, photos or other files,</li>
+    <li>no multiplayer, chat or sharing features.</li>
+  </ul>
+  <p>The app only uses your device's vibration (can be turned off in the game's settings).</p>
+
+  <h3>3. Game progress and settings on your device</h3>
+  <p>So that you can continue playing, the app stores your progress (e.g. completed levels, gold, diamonds, bought equipment,
+  buildings) and your settings (e.g. sound, language, controls) locally on your device. We have no access to this data. It is deleted
+  when you uninstall the app or use “Clear data” in Android's app settings.</p>
+  <p>If automatic Android backup is turned on for your device, Android may back up this app data to your Google account and restore
+  it when you reinstall. This backup is performed by Google/Android, not by us, and can be turned off in your device settings.</p>
+
+  <h3>4. Testing via Google Play</h3>
+  <p>Wallwarden is first distributed as a closed test on Google Play. Google Play invites testers by their email address or Google
+  account; this list is managed in the Google Play Console. We use these addresses only to run the test and not for marketing. If you
+  send us feedback by email or through Google Play's feedback feature, we process your email address or name and the content of your
+  message to improve the game and to reply to you (legal basis: Art. 6(1)(f) GDPR, legitimate interest in improving the app; in
+  Switzerland the principles of the FADP).</p>
+
+  <div class="box" id="delete"><b>How to delete your data:</b>
+  <ul>
+    <li><b>Game progress on your device:</b> uninstall the app or choose “Clear data” for Wallwarden in Android's settings.</li>
+    <li><b>Messages to us and the tester list:</b> send an email to
+    <a href="mailto:support@konolfstudio.app?subject=Delete%20Wallwarden">support@konolfstudio.app</a> with the subject
+    “Delete Wallwarden” and tell us the email address you use for the test or wrote to us from. Within one month we delete your
+    messages to us, remove you from the tester list if you wish, and confirm this to you by email. Without a request, we delete
+    feedback emails once we no longer need them, no later than 12 months after the end of the test.</li>
+  </ul>
+  There is no user account with us that would need to be deleted.</div>
+
+  <h3>5. Google Play Store</h3>
+  <p>When you download the app from Google Play, Google processes data under its own responsibility (e.g. your Google account and
+  download information). We have no influence on this. Statistics we see in the Google Play Console are aggregated and do not identify
+  individual people. The <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> applies.</p>
+
+  <h3>6. Children</h3>
+  <p>Wallwarden is intended for players aged 13 and over. We do not collect any data from children. Children should not write to us
+  without their parents. If we learn that a child has sent us personal data, we delete it.</p>
+
+  <h3>7. Your rights</h3>
+  <p>Under the Swiss Federal Act on Data Protection (FADP) or – if you live in the EU – the General Data Protection Regulation (GDPR),
+  you have the right of access, rectification, erasure, restriction of processing, data portability and objection, and the right to
+  lodge a complaint with a data protection supervisory authority (in Switzerland the Federal Data Protection and Information
+  Commissioner, FDPIC; in the EU the authority of your country of residence). Apart from messages you send us yourself (section 4),
+  we do not store any personal data about you. If you have any questions, contact us at the email address above.</p>
+
+  <h3 id="website">8. This website</h3>
+  <p>This privacy policy is hosted on GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA).
+  When you open it, GitHub processes technically necessary data such as your IP address to deliver the page and protect it from
+  attacks. The page itself uses no cookies, no scripts and no embedded third-party content. GitHub's privacy policy:
+  <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
+
+  <h3>9. Changes</h3>
+  <p>If the app changes in a way that affects how data is processed (for example through real ads or real purchases via Google
+  Play), we will update this privacy policy beforehand. The version published here applies.</p>
+</section>
+
+<footer>Wallwarden · <a href="#de">Datenschutz</a> · <a href="#en">Privacy</a> · <a href="#loeschen">Daten löschen</a> · <a href="#delete">Delete data</a></footer>
+</main>
+</body>
+</html>

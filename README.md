@@ -96,6 +96,12 @@ Jede App bekommt unter `datenschutz/` einen eigenen Ordner mit einer `index.html
 - Die App sammelt keine Daten, hat keine Werbung, keine Käufe und ruft keine Internet-Adressen auf. Kommt die geplante
   Paywall (Google Play Billing), Feedback oder ein Online-Dienst dazu, die Erklärung vorher anpassen.
 
+## Wallwarden
+
+- Adresse: https://konolfstudio.app/datenschutz/wallwarden/ (Deutsch `#de`, Englisch `#en`, Löschung `#loeschen` / `#delete`)
+- Angelegt 22.11.2026 für den geschlossenen Test (Version 0.22.0). Die App sammelt keine Daten; Werbung, Käufe und Einwilligung
+  sind nur simuliert. Vor dem Einbau von LevelPlay/AdMob, UMP oder Google Play Billing die Erklärung neu fassen.
+
 ## Eigene Domain (optional)
 
 Soll die Seite unter `https://konolfstudio.app/` erscheinen: in Cloudflare die DNS-Einträge für GitHub Pages anlegen
